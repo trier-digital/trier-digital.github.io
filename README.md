@@ -1,2 +1,2 @@
-# trier-digital.github.io
+# Trier Digital
 Repository zum Projekt "Trier Digital"

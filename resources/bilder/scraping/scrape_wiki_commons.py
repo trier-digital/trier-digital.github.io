@@ -10,12 +10,13 @@ import dateutil.parser as parser
 from requests.adapters import HTTPAdapter
 from tqdm import tqdm
 from urllib3 import Retry
+from xml.etree import ElementTree as ET
 
 api_url = "https://commons.wikimedia.org/w/api.php"
 
 # Hyperparameter
 query = "trier"
-limit = 1000
+limit = 100
 min_year = 1890
 max_year = 1930
 
@@ -192,11 +193,52 @@ def filter_dates(data: dict) -> dict:
     return data
 
 
+def make_html(data: dict) -> None:
+    keys = list(data.keys())
+    html = ET.Element("html", {"lang": "de"})
+    root = ET.ElementTree(html)
+    head = ET.SubElement(html, "head")
+    title = ET.SubElement(head, "title")
+    style = ET.SubElement(head, "style")
+    style.text = "img {width: 500px;}"
+    ET.SubElement(head, "meta", {"charset": "utf-8"})
+    title.text = "Wikimedia Results"
+    body = ET.SubElement(html, "body")
+    for key in tqdm(keys):
+        if key == "unsure":
+            sub_keys = list(data[key].keys())
+            for sub_key in sub_keys:
+                section = ET.SubElement(body, "section")
+                name = ET.SubElement(section, "h3")
+                name.text = data[key][sub_key]["title"]
+                ET.SubElement(section, "img", {"src": data[key][sub_key]["url"]})
+                date = ET.SubElement(section, "p")
+                date.text = "Date:", data[key][sub_key]["date"]
+                license = ET.SubElement(section, "p")
+                license.text = "License:", data[key][sub_key]["license"]
+            continue
+        section = ET.SubElement(body, "section")
+        name = ET.SubElement(section, "h3")
+        name.text = data[key]["title"]
+        ET.SubElement(section, "img", {"src": data[key]["url"], "alt": "bild"})
+        date = ET.SubElement(section, "p")
+        date.text = f"Date: {data[key]['date']}"
+        license = ET.SubElement(section, "p")
+        license.text = f"License: {data[key]['license']}"
+        ET.SubElement(section, "br")
+
+    ET.indent(root, space="\t", level=0)
+    with open("results.html", "wb") as f:
+        f.write(bytes("<!DOCTYPE html>\n", "utf-8"))
+        root.write(f, encoding="utf-8")
+
+
 def main() -> None:
     titles = search_titles()
     meta = search_meta_v2(titles)
     data = get_dates(meta)
     filtered_data = filter_dates(data)
+    make_html(filtered_data)
     with open('trier_dates.json', 'w', encoding="utf-8") as outfile:
         json.dump(filtered_data, outfile, indent="\t", ensure_ascii=False)
 

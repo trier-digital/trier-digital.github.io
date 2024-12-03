@@ -16,7 +16,7 @@ api_url = "https://commons.wikimedia.org/w/api.php"
 
 # Hyperparameter
 query = "trier"
-limit = 100
+limit = 500
 min_year = 1890
 max_year = 1930
 

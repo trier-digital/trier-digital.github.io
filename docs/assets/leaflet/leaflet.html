@@ -36,7 +36,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[49.714903968221094,6.573873643948205],[49.76238603628931,6.683885840212045]]);
+        }).fitBounds([[49.63718403091273,6.366347316216796],[49.84953583696352,6.8583984820949295]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -87,15 +87,15 @@
         });
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
-        map.createPane('pane_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1');
-        map.getPane('pane_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1').style.zIndex = 401;
-        var img_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1 = 'data/1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1.png';
-        var img_bounds_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1 = [[49.725565656353425,6.591510920362659],[49.78474401305854,6.680793262997311]];
-        var layer_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1 = new L.imageOverlay(img_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1,
-                                              img_bounds_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1,
-                                              {pane: 'pane_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1'});
-        bounds_group.addLayer(layer_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1);
-        map.addLayer(layer_1934_PanvonTrierSchwarzdruck_DeutscheFotothek_modifiziert_1);
+        map.createPane('pane_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1');
+        map.getPane('pane_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1').style.zIndex = 401;
+        var img_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1 = 'data/Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1.png';
+        var img_bounds_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1 = [[49.67561235205943,6.463983207354801],[49.80864219129199,6.721633467603461]];
+        var layer_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1 = new L.imageOverlay(img_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1,
+                                              img_bounds_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1,
+                                              {pane: 'pane_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1'});
+        bounds_group.addLayer(layer_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1);
+        map.addLayer(layer_Topographic_Map_of_Trier_with_Defense_Overprint__NARA__100384430_page_3_modifiziert_1);
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {

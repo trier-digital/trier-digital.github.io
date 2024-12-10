@@ -1,7 +1,13 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/bildergalerie">Bildergalerie</router-link> |
+    <router-link to="/karten">Karten</router-link> |
+    <router-link to="/diskurs">Diskurs</router-link> |
+    <router-link to="/zukunft">Zukunftsvisionen</router-link>
+
+
   </nav>
   <router-view/>
 </template>

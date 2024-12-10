@@ -1,15 +1,16 @@
 <template>
   <nav class="navmenu">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/bildergalerie">Bildergalerie</router-link> |
-    <router-link to="/karten">Karten</router-link> |
-    <router-link to="/diskurs">Diskurs</router-link> |
-    <router-link to="/zukunft">Zukunftsvisionen</router-link>
-
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/bildergalerie">Bildergalerie</router-link></li>
+      <li><router-link to="/karten">Karten</router-link></li>
+      <li><router-link to="/diskurs">Diskurs</router-link></li>
+      <li><router-link to="/zukunft">Zukunftsvisionen</router-link></li>
+    </ul>
 
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -33,4 +34,9 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }*/
+@import "./assets/css/main.css";
+
+nav {
+  color: #1c1c1c;
+}
 </style>

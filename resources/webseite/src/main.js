@@ -6,7 +6,7 @@ import router from './router'
 const scripts = require.context('./assets', true, /\.js$/);
 styles.keys().forEach(styles);
 scripts.keys().forEach(scripts); */
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
+import "bootstrap/dist/css/bootstrap.css"
+import bootstrap from "bootstrap/dist/js/bootstrap.bundle.js"
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(bootstrap).use(router).mount('#app')

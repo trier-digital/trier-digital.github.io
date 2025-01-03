@@ -7,16 +7,19 @@
         </div>
       </div><!-- End Page Title -->
   <BilderCarousel />
-</template>
+  <Counter />
+
+  </template>
 
 <script>
 // @ is an alias to /src
 import BilderCarousel from '@/components/BilderCarousel.vue';
+import Counter from '@/components/Counter.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    BilderCarousel
+    BilderCarousel, Counter
   }
 }
 </script>

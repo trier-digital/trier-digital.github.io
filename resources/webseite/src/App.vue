@@ -87,7 +87,7 @@ body {
 }
 
 #navbar i {
-  display: none; /* Falls du den mobilen Menübutton nicht benötigst, kannst du ihn verstecken */
+  display: none; /*mobilen Menübutton verstecken */
 }
 
 </style>
@@ -95,7 +95,7 @@ body {
 
 <script>
 export default {
-  name: 'YourComponent',
+  name: 'App',
   mounted() {
     this.loadScripts();
   },

@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top" :class="{'solid': this.$route.name !== 'home'}">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <router-link to="/" class="logo d-flex align-items-center">
@@ -113,5 +113,10 @@ nav a.router-link-exact-active {
 
 footer {
   margin-top: 30px;
+}
+
+.solid {
+  background-color: #1e4356;
+  transition: all 0.0s;
 }
 </style>

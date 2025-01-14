@@ -1,6 +1,6 @@
 <template>
   <Hero></Hero>
-  <div class="home-container">
+  <div id="home-container" class="home-container">
     <div class="home">
       <HelloWorld msg="Trier Digital" />
     </div>

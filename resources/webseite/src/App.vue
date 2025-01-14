@@ -1,5 +1,6 @@
 <template>
-  <header id="header" class="header d-flex align-items-center fixed-top" :class="{'solid': this.$route.name !== 'home'}">
+  <header id="header" class="header d-flex align-items-center fixed-top"
+    :class="{ 'solid': this.$route.name !== 'home' }">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <router-link to="/" class="logo d-flex align-items-center">
@@ -16,6 +17,13 @@
           <li><router-link to="/karten">Karten</router-link></li>
           <li><router-link to="/diskurs">Diskurs</router-link></li>
           <li><router-link to="/zukunft">Zukunftsvisionen</router-link></li>
+          <li class="dropdown"><router-link to="/"><span>Extras</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></router-link>
+            <ul>
+              <li><router-link to="/methoden">Methoden</router-link></li>
+              <li><router-link to="/team">Team</router-link></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -83,7 +91,6 @@
 
   </footer>
 </template>
-
 
 <style>
 /*#app {

@@ -1,18 +1,41 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Hero></Hero>
+  <div class="home-container">
+    <div class="home">
+      <HelloWorld msg="Trier Digital" />
+    </div>
+    <div>
+      <Intro></Intro>
+    </div>
+    <div>
+      <carousel></carousel>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import Hero from '@/components/Hero.vue';
+import carousel from '@/components/carousel.vue';
+import Intro from '@/components/Intro.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    HelloWorld,
+    Hero,
+    carousel,
+    Intro
   }
 }
 </script>
+
+<style>
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+</style>

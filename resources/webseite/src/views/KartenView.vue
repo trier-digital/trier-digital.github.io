@@ -13,30 +13,41 @@
       ></vue-slider>
     </div>
     </div>
-    <div class="row mt-4">
-    <div class="col-12 col-md-4">
-    <!-- Bereich zum Anzeigen der Karten und Metadaten -->
-    <div v-if="selectedDecadeCards.length > 0" class="cards-container">
-      <h3>Karten für das Jahrzehnt ab {{ value }}</h3>
-      <div v-for="(card, index) in selectedDecadeCards" :key="index" class="card-item">
-        <div class="card-image">
-          <iframe :src="card.url" width="200" height="150" frameborder="0"></iframe>
+    
+    <div class="row">
+      <div class="col-3">
+      <!-- Bereich zum Anzeigen der Karten und Metadaten -->
+        <div v-if="selectedDecadeCards.length > 0" class="cards-container">
+          <h3>Karten für das Jahrzehnt ab {{ value }}</h3>
+          <div v-for="(card, index) in selectedDecadeCards" :key="index" class="card-item" @click="selectCard(card)">
+            <div class="card-image">
+              <iframe :src="card.url" width="200" height="150" frameborder="0"></iframe>
+            </div>
+            <div class="card-info">
+              <p><strong>Name:</strong> {{ card.name }}</p>
+              <p><strong>Jahr:</strong> {{ card.year }}</p>
+            </div>
+          </div>
         </div>
-        <div class="card-info">
-          <p><strong>Name:</strong> {{ card.name }}</p>
-          <p><strong>Jahr:</strong> {{ card.year }}</p>
+        <div v-else>
+          <p>Keine Karten verfügbar für das Jahrzehnt {{ value }}</p>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="cards-container" v-if="selectedCard">
+          <h3>{{ selectedCard.name }}</h3>
+          <iframe 
+            :src="selectedCard.url" 
+            width="60%" 
+            height="600px" 
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div v-else>
+          <p>Wählen Sie eine Karte aus, um sie anzuzeigen.</p>
         </div>
       </div>
     </div>
-    <div v-else>
-      <p>Keine Karten verfügbar für das Jahrzehnt {{ value }}</p>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-md-8">
-  <div class="card-container">
-  </div>
-</div>
 
 </template>
 <script>
@@ -83,7 +94,8 @@ export default {
         1970: [],
         1980: []
       },
-      selectedDecadeCards: [] // Karten für das ausgewählte Jahrzehnt
+      selectedDecadeCards: [], // Karten für das ausgewählte Jahrzehnt
+      selectedCard: null // Die aktuell ausgewählte Karte
     };
   },
   methods: {
@@ -93,7 +105,11 @@ export default {
       // Wähle die Karten aus, die zum ausgewählten Jahrzehnt passen
       this.selectedDecadeCards = this.cardsByDecade[this.value] || [];
     });
-    }
+    },
+  // Diese Methode wird aufgerufen, wenn auf eine Karte geklickt wird
+  selectCard(card) {
+    this.selectedCard = card;
+  }
   },
   created() {
     // Initialisieren der Karten für das erste Jahrzehnt
@@ -147,5 +163,10 @@ export default {
 
 .card-info p {
   margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

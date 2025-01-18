@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import BildDetailsView from '@/views/BildDetailsView.vue'
 
 const routes = [
   {
@@ -62,7 +63,13 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/TeamView.vue')
-  }
+  },
+  {
+    path: '/bildergalerie/:id',  // Dynamische Route für die Detailansicht
+    name: 'bild-details',
+    component: BildDetailsView,  // Die Detailseite
+    props: true,  // Übergibt die Parameter als Props
+  },
 ]
 
 const router = createRouter({

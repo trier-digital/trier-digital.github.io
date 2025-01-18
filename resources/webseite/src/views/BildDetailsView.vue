@@ -1,68 +1,58 @@
 <template>
-  <!--div id="app">
-    <div class="menu"-->
-    
-  <section id="portfolio" class="portfolio section">
-    <div class="container">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-      <ul class="portfolio-filters isotope-filters">
-      <li
-        v-for="(category, index) in categories"
-        :key="index"
-        @click="filter(category)"
-        :class="{ selected: selectedCat === category }"
-      >
-        {{ category }}
-      </li>
-      <li @click="filter('all')" :class="{ selected: selectedCat === 'all' }">
-        Alle
-      </li>
-      </ul>
+  <!-- Page Title -->
+  <div class="page-title dark-background">
+  <div class="container position-relative">
+    <h1>Bilddetails</h1>
+  </div> 
+  </div><!-- End Page Title -->
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper init-swiper">
+          <div class="swiper-wrapper align-items-center">
+            <img :src="image.src" class="img-fluid" :alt="image.ort" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>{{ image.ort }}</h3>
+          <ul>
+            <li><strong>Datierung</strong>: {{ image.date }}</li>
+            <li><strong>Lizenz</strong>: {{ image.licence }}</li>
+            <li><strong>Urheber</strong>: {{ image.urheber }}</li>
+            <li><strong>URL</strong>: <a :href="image.url">URL</a></li>
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h2>Beschreibung</h2>
+          <p>
+            {{ image.desc }}
+            </p>
+        </div>
       </div>
     </div>
-    
-    <div class="container">
-    <div class="row gy-4 isotope-container"> <!--Sorgt für die Reihen-->
-    <div
-      v-for="(preview, index) in filteredPreviews"
-      :key="index"
-      :class="['col-lg-4 col-md-6 portfolio-item isotope-item', preview.cat]"
-    >
-    <div class="portfolio-content h-100">
-      <img :src="preview.src" class="img-fluid" :alt="'Image in category ' + preview.cat" />
-      <div class="portfolio-info">
-            <h4>{{ preview.date }}</h4>
-            <p>{{ preview.ort }}</p>
-            <a :href="preview.src" :title="preview.ort" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-              <i class="bi bi-zoom-in"></i>
-            </a>
-            <router-link :to="`/bildergalerie/${index}`" title="More Details" class="details-link">
-              <i class="bi bi-link-45deg"></i>
-            </router-link>
-        </div>
-        <div class="caption">{{ preview.ort }}</div>
-    </div>
-    </div>
-    </div>
-    </div>
-  </section>
+
+  </div>
+
+</section><!-- /Portfolio Details Section -->
+
 </template>
 
 <script>
-import { defineComponent } from "vue";
 
-//Für Galerie-Funktionalitäten
-import GLightbox from 'glightbox'; // Importiere GLightbox
-import 'glightbox/dist/css/glightbox.css'; // Importiere das CSS für GLightbox
-
-
-export default defineComponent({
-  name: "Bildergalerie",
-  data() {
-    return {
-      categories: ["cat1", "cat2", "cat3"],
-      previews: [
-    {
+export default {
+    props: ['id'],  // Hier empfangen wir die ID der Bilddetails
+    name: 'BildDetailsView',
+    data() {
+      return {
+        images: [
+        {
     src: "assets/img/trier/Wikimedia Bilder/Trier_Hauptmarkt.jpg",
     date: "1899",
     ort: "Hauptmarkt",
@@ -129,7 +119,7 @@ export default defineComponent({
     src: "assets/img/trier/Wikimedia Bilder/Trier_Viehmarktbrunnen.jpg",
     date: "before 1898",
     ort: "Trier, Viehmarkt",
-    desc: "Brunnen auf dem Viehmarktplatz in Trier, erbaut 1829, abgerissen 1898..",
+    desc: "Brunnen auf dem Viehmarktplatz in Trier, erbaut 1829, abgerissen 1898.",
     licence: "Public Domain, PD-US",
     urheber: "Aufnahme um 1829 von Prof. Wilhelm Deuser, Sammlung Stadtarchiv Trier",
     url: "https://commons.wikimedia.org/wiki/File:Trier_Viehmarktbrunnen.jpg"
@@ -602,153 +592,14 @@ export default defineComponent({
     urheber: "Claus-Peter Beckhäuser, Tuchfabrik (Kulturzentrum)",
     url: "Unbekannt"
   }
-      ],
-      selectedCat: "all",
-    };
-  },
-  computed: {
-    filteredPreviews() {
-      return this.selectedCat === "all"
-        ? this.previews
-        : this.previews.filter((preview) => preview.cat === this.selectedCat);
+        ],
+      };
     },
-  },
-  mounted() {
-    // Initialisiere GLightbox, wenn die Komponente gemountet wird (für Galerie-Anzeige, wenn man auf ein Bild klickt)
-    const lightbox = GLightbox({
-      selector: '.glightbox' // GLightbox auf alle Elemente mit der Klasse .glightbox anwenden
-    });
-  },
-  methods: {
-    filter(category) {
-      this.selectedCat = category;
+    computed: {
+      image() {
+        // Verwende die ID, um das entsprechende Bild zu finden
+        return this.images[this.id];
+      },
     },
-    shuffle(array) {
-      return array.sort(() => Math.random() - 0.5);
-    }
-  },
-});
+  };
 </script>
-
-<style scoped>
-body {
-  background: #20262e;
-  padding: 20px;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#app {
-  background: #fff;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 4px;
-  padding: 20px;
-  display: grid;
-  /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
-  /*grid-gap: 10px;*/
-  grid-template-columns: repeat(3, 1fr); /* Drei Spalten pro Zeile */
-  grid-gap: 20px; /* Abstand zwischen den Bildern */
-}
-
-.preview {
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  position: relative;
-  animation: appear 0.5s ease-in-out forwards;
-}
-
-.preview img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Zuschneiden, um das Bild in den Container einzupassen */
-  border-radius: 4px; /*Runde Ecken */
-}
-
-.caption {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  font-size: 14px;
-  border-top: 1px solid #ddd;
-}
-
-/*
-.cat1 {
-  background: gold;
-}
-.cat2 {
-  background: #333;
-}
-.cat3 {
-  background: #ddd;
-}
-  */
-
-.menu {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  display: flex;
-  flex-flow: wrap;
-  margin: -5px -5px;
-}
-
-button {
-  cursor: pointer;
-  margin: 5px 5px;
-  border: 0;
-  padding: 5px 10px;
-  background: #ddd;
-  border: 1px solid #ddd;
-  transition: 0.3s ease-in-out;
-  transition-property: background, border, color;
-}
-
-button.selected {
-  background: #fff;
-  color: #333;
-  border: 1px solid #333;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:hover {
-  color: #fff;
-  background: #333;
-  border: 1px solid #333;
-}
-
-@keyframes appear {
-  to {
-    width: 100%;
-    opacity: 1;
-  }
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

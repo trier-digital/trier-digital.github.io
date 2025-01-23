@@ -7,9 +7,6 @@
     <div>
       <Intro></Intro>
     </div>
-    <div>
-      <carousel></carousel>
-    </div>
   </div>
 </template>
 
@@ -17,7 +14,6 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import Hero from '@/components/Hero.vue';
-import carousel from '@/components/carousel.vue';
 import Intro from '@/components/Intro.vue';
 
 export default {
@@ -25,7 +21,6 @@ export default {
   components: {
     HelloWorld,
     Hero,
-    carousel,
     Intro
   }
 }

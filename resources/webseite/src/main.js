@@ -8,5 +8,8 @@ styles.keys().forEach(styles);
 scripts.keys().forEach(scripts); */
 import "bootstrap/dist/css/bootstrap.css"
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle.js"
+import AOS from 'aos'
+
+AOS.init({once: true})
 
 createApp(App).use(bootstrap).use(router).mount('#app')

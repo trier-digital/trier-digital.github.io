@@ -21,7 +21,14 @@
             </ul>
           </li>
           <li><router-link to="/karten">Karten</router-link></li>
-          <li><router-link to="/diskurs">Diskurs</router-link></li>
+          <li class="dropdown"><router-link to="/"><span>Diskurs</span> <i
+              class="bi bi-chevron-down toggle-dropdown"></i></router-link>
+            <ul>
+              <li><router-link to="/sentiment">Sentiment</router-link></li>
+              <li><router-link to="/rathaus">Auswertung Rathauszeitung</router-link></li>
+              <li><router-link to="/">Diskurs3</router-link></li>
+            </ul>
+          </li>
           <li><router-link to="/zukunft">Zukunftsvisionen</router-link></li>
           <li class="dropdown"><router-link to="/"><span>Extras</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>

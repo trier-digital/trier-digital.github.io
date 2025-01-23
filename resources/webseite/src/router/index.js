@@ -41,6 +41,54 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/DiskursView.vue')
   },
   {
+    path: '/sentiment',
+    name: 'sentiment',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/SentimentView.vue')
+  },
+  {
+    path: '/sentiment/emodist',
+    name: 'emodist',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/EmoDistView.vue')
+  },
+  {
+    path: '/sentiment/emodistpartei',
+    name: 'emodistpartei',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/EmoDistPerPartyView.vue')
+  },
+  {
+    path: '/sentiment/emodistprozent',
+    name: 'emodistprozent',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/EmoDistPercentView.vue')
+  },
+  {
+    path: '/sentiment/emowort',
+    name: 'emowort',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/EmoWordsView.vue')
+  },
+  {
+    path: '/rathaus',
+    name: 'rathaus',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/RathausZeitungView.vue')
+  },
+  {
     path: '/karten',
     name: 'karten',
     // route level code-splitting

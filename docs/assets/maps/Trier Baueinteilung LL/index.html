@@ -21,6 +21,7 @@
         <title></title>
     </head>
     <body>
+        <input id="slide" type="range" min="0" max="1" step="0.1" value="1" onchange="updateOpacity(this.value)">
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -102,6 +103,13 @@
                 return this._bounds;
             }
         });
+
+
+        // Funktion zum Aktualisieren der Opazität des Bildes
+        function updateOpacity(value) {
+            // Setze die Opazität des Bild-Overlays (Layer)
+            layer_Trier1911_modifiziert_1.setOpacity(value);
+        }
         </script>
     </body>
 </html>

@@ -20,7 +20,14 @@
               <li><router-link to="/juxtapose">Trier früher und heute</router-link></li>
             </ul>
           </li>
-          <li><router-link to="/karten">Karten</router-link></li>
+          <li class="dropdown"><router-link to="/"><span>Karten</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></router-link>
+            <ul>
+              <li><router-link to="/karten">Karten der Stadt Trier</router-link></li>
+              <li><router-link to="/routenkarte">Routen</router-link></li>
+              <li><router-link to="/poiskarte">Points of Interest</router-link></li>
+            </ul>
+          </li>
           <li class="dropdown"><router-link to="/"><span>Diskurs</span> <i
               class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>

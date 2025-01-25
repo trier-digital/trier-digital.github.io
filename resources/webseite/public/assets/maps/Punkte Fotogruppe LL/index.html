@@ -90,35 +90,63 @@
         map.addLayer(layer_OpenStreetMap_0);
         /*Ab hier neu hinzugefügter Code*/
         pois = [
-            "Trier, Petrisberg 1",
-            "Trier, Alt-Pallien 2",
-            "Simeonstraße, Trier 3",
-            "Werner-Siemens-Straße, Trier 4",
-            "Trier, Palastgarten 5",
-            "Trier, Kaiser-Wilhelm-Brücke 18",
-            "Trier, Hotel Reichshof 7",
-            "Trier, Hauptbahnhof 8",
-            "Trier, Basilika 9",
-            "Hauptmarkt 9",
-            "Trier, Porta Nigra Platz 10",
-            "Dom und Liebfrauenkirche, Trier 12",
+            "Petrisberg",
+            "Alt-Pallien",
+            "Simeonstraße",
+            "Werner-Siemens-Straße",
+            "Palastgarten",
+            "Kaiser-Wilhelm-Brücke",
+            "Hotel Reichshof",
+            "Hauptbahnhof",
+            "Basilika",
+            "Hauptmarkt",
+            "Porta Nigra Platz",
+            "Dom und Liebfrauenkirche",
             "Trier, Domfreihof 11",
-            "Auguste-Viktoria-Gymnasium 13",
-            "Porta Nigra 14",
-            "Benediktinerstraße 15",
-            "Trier, Viehmarkt 16",
-            "Trier, Kornmarkt 17",
-            "Römerbrücke 6",
-            "Trier, Kaiserthermen 19",
-            "Barbarathermen 20",
-            "Trier, Mariensäule 21",
-            "Trier, Bahnhofstraße 22",
-            "Trier, Pferdemarkt 23",
-            "Trier, Tuchfabrik 24"
+            "Auguste-Viktoria-Gymnasium",
+            "Porta Nigra",
+            "Benediktinerstraße",
+            "Viehmarkt",
+            "Kornmarkt",
+            "Römerbrücke",
+            "Kaiserthermen",
+            "Barbarathermen",
+            "Mariensäule",
+            "Bahnhofstraße",
+            "Pferdemarkt",
+            "Tuchfabrik"
         ];
+        poi_links = [
+            "56",
+            "27",
+            "23",
+            "15",
+            "45",
+            "17",
+            "57",
+            "37",
+            "42",
+            "29",
+            "20",
+            "14",
+            "43",
+            "18",
+            "33",
+            "32",
+            "7",
+            "1",
+            "28",
+            "58",
+            "4",
+            "26",
+            "24",
+            "50",
+            "52"
+        ];
+        
         /*Bis hier neu hinzugefügter Code*/
         function pop_Punkte_Fotogruppe_1(feature, layer) {
-                	var popupContent =  '<a href="https://www.w3schools.com">' + pois[feature.properties['id']-1] + '</a>';
+                	var popupContent =  '<a href="https://trier-digital.github.io/#/bildergalerie/' + poi_links[feature.properties['id']-1] + '" target="_blank">' + pois[feature.properties['id']-1] + '</a>';
                     /*'<table>\
                         <tr>\
                             <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + pois[feature.properties['id']-1] + '</td>\

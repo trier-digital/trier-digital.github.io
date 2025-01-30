@@ -24,3 +24,9 @@
     components: {},
   }
 </script>
+
+<style scoped>
+.container {
+  padding-top: 50px;
+}
+</style>

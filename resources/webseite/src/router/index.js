@@ -89,6 +89,22 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/RathausZeitungView.vue')
   },
   {
+    path: '/topics',
+    name: 'toppics',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/TopicsView.vue')
+  },
+  {
+    path: '/topicsdist',
+    name: 'topicsdist',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/TopicsDistView.vue')
+  },
+  {
     path: '/karten',
     name: 'karten',
     // route level code-splitting
@@ -97,20 +113,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/KartenView.vue')
   },
   {
-    path: '/routenkarte',
-    name: 'routenkarte',
+    path: '/topicstime',
+    name: 'topicstime',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/RoutenKarteView.vue')
-  },
-  {
-    path: '/poiskarte',
-    name: 'poiskarte',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/POIKarteView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/TopicsTimeView.vue')
   },
   {
     path: '/zukunft',

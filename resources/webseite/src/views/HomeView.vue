@@ -4,6 +4,7 @@
     <div class="home">
       <HelloWorld msg="Trier Digital" />
     </div>
+    <Counter/>
     <div>
       <Intro></Intro>
     </div>
@@ -12,6 +13,7 @@
 
 <script>
 // @ is an alias to /src
+import Counter from '@/components/Counter.vue';
 import HelloWorld from '@/components/HelloWorld.vue'
 import Hero from '@/components/Hero.vue';
 import Intro from '@/components/Intro.vue';
@@ -21,7 +23,8 @@ export default {
   components: {
     HelloWorld,
     Hero,
-    Intro
+    Intro,
+    Counter
   }
 }
 </script>

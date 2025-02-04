@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BildDetailsView from '@/views/BildDetailsView.vue'
+import TheaterExhausDomView from '@/views/TheaterExhausDomView.vue'
 
 const routes = [
   {
@@ -39,6 +40,32 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/DiskursView.vue')
+  },
+  {
+    path: '/textanalyse',
+    name: 'textanalyse',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AuswertungPOIsView.vue')
+  },
+  {
+    path: '/textanalyse/dom',
+    name: 'dom',
+    component: TheaterExhausDomView,
+    props: { type: 'dom' }, // Typ an die Komponente übergeben
+  },
+  {
+    path: '/textanalyse/exhaus',
+    name: 'exhaus',
+    component: TheaterExhausDomView,
+    props: { type: 'exhaus' }, // Typ an die Komponente übergeben
+  },
+  {
+    path: '/textanalyse/theater',
+    name: 'theater',
+    component: TheaterExhausDomView,
+    props: { type: 'theater' }, // Typ an die Komponente übergeben
   },
   {
     path: '/sentiment',
@@ -111,6 +138,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/KartenView.vue')
+  },
+  {
+    path: '/routenkarte',
+    name: 'routenkarte',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/RoutenKarteView.vue')
+  },
+  {
+    path: '/poiskarte',
+    name: 'poiskarte',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/POIKarteView.vue')
   },
   {
     path: '/topicstime',

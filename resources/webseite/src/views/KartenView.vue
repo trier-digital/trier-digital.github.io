@@ -24,17 +24,17 @@
     </div>
     
     <div class="row">
-      <div class="col-3">
+      <div class="col-12 col-md-3">
       <!-- Bereich zum Anzeigen der Karten und Metadaten -->
         <div v-if="selectedDecadeCards.length > 0" class="cards-container">
           <h3>Karten für das Jahrzehnt ab {{ value }}</h3>
           <div v-for="(card, index) in selectedDecadeCards" :key="index" class="card-item" @click="selectCard(card)"  style="cursor:pointer;">
-            <div class="card-image">
-              <img :src="card.preview" width="200" height="150" frameborder="0"></img>
-            </div>
             <div class="card-info">
               <p><strong>Name:</strong> {{ card.name }}</p>
               <p><strong>Jahr:</strong> {{ card.year }}</p>
+            </div>
+            <div class="card-image">
+              <img :src="card.preview" width="200" height="150" frameborder="0"></img>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="col-5">
+      <div class="col-12 col-md-5">
         <div class="cards-container" v-if="selectedCard">
           <h3>{{ selectedCard.name }}</h3>
           <iframe 
@@ -57,7 +57,7 @@
         </div>
       </div>
 
-      <div class="col-4" v-if="selectedCard">
+      <div class="col-12 col-md-4" v-if="selectedCard">
         <div class="metadata-container" v-if="selectedCard">
           <p><strong>Name:</strong> {{ selectedCard.name }}</p>
           <p><strong>Jahr:</strong> {{ selectedCard.year }}</p>
@@ -144,6 +144,15 @@ export default {
         scale: 'nicht angegeben',
         comment: 'Auf der Karte ist ein Speisekabelnetz zu sehen, das 1902 samt Prüfkabel, die die Licht- und Straßenbahnspannung gemessen haben, eingelegt wurde [1]. Speisekabel verlaufen zwischen Transformatorstationen. Außerdem sind diese durch Zwischenschaltung von Verteilungskästen mit den Verteilungskabeln verbunden, die den Strom auf Straßen verteilen [2]. Die Karte wurde von Hermann Henney in seinem Buch "Die Elektrizitäts-Werke der Stadt Trier" abgedrückt.\n[1] Henney, Hermann: Die Elektrizitäts-Werke der Stadt Trier, Bau- und Entwicklungs-Geschichte 1902 bis 1913, Trier 1913\n[2] Ebd.',
         preview: '/assets/maps/Vorschaubilder/Trier Speisekabelnetz LL_vorschau.jpg'},
+        {
+        url: '/assets/maps/Trier Verteilungskabel LL/index.html',
+        name: '',
+        year: '1913',
+        source: '',
+        link: '',
+        scale: '',
+        comment: '',
+        preview: '/assets/maps/Vorschaubilder/Trier Verteilungskabel LL_vorschau.jpg'},
         {
         url: '/assets/maps/Trier 1916 LL/index.html',
         name: 'Messtischblatt 6204/6205 : Trier, 1916',
@@ -258,6 +267,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 /* Setze den Slider in die Mitte der Seite */
 .slider-container {
@@ -295,20 +305,34 @@ export default {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+
+
 .card-item {
-  display: flex;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  /*display: block;*/
+  /*width: 200px;*/
+  margin-bottom: 10px; /* Abstand zwischen Karten */
+}
+
+.card-info {
+  padding: 5px;
+  /*background-color: rgba(0, 0, 0, 0.6);*/
+  /*color: white;*/
+  text-align: left;
+  border-radius: 5px; /* Ecken abrunden */
 }
 
 .card-image {
-  margin-right: 15px;
+  margin-top: 0px; /* Abstand zwischen Text und Bild */
 }
 
-.card-info p {
-  margin: 5px 0;
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bild wird das gesamte Element ausfüllen, ohne das Seitenverhältnis zu verzerren */
 }
+
+
 
 .row {
   display: flex;

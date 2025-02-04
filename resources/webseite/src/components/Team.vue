@@ -4,11 +4,11 @@
 
         <div class="container">
   
-          <div class="row gy-5">
+          <div class="row gy-5 gx-5">
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Nune.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Nune Arazyan</h4>
@@ -19,18 +19,18 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Dennis Binz</h4>
-                <span>B.A. Computerlinguistik und Phonetik,<br>B.Sc. Sprache, Technologie, Medien</span>
+                <span>B.Sc. Sprache, Technologie, Medien</span>
                 <p>Webseite</p>
               </div>
             </div><!-- End Team Member -->
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Naemi_Bürger.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Naemi Bürger</h4>
@@ -41,18 +41,18 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Rebecca Daniel</h4>
                 <span>B.A. Museologie</span>
-                <p>Textkorpus</p>
+                <p>Erstellung des Textkorpus, Textanalyse, Informationsvisualisierung</p>
               </div>
             </div><!-- End Team Member -->
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Foto_RachelGeorg.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Rachel Georg</h4>
@@ -63,40 +63,40 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Nele Mantaj</h4>
-                <span>Karten</span>
-                <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+                <span>B.A. Geschichte und Klassische Archäologie</span>
+                <p>Recherche, Georeferenzierung historischer Karten</p>
               </div>
             </div><!-- End Team Member -->
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Bianca Ottenberg</h4>
-                <span>Diskurs: Topic Modeling</span>
-                <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+                <span>B.A. Allgemeine Sprachwissenschaft und Psychologie</span>
+                <p>Korpusanalyse (Schwerpunkt Topic Modeling), Informationsvisualisierung</p>
               </div>
             </div><!-- End Team Member -->
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Rebecca_Robinson.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Rebecca Robinson</h4>
                 <span>B.A. Literaturwissenschaften und Philosophie</span>
-                <p>Öffentlichkeitsarbeit, Recherche, Fotografien/Bildbearbeitung</p>
+                <p>Öffentlichkeitsarbeit, Recherche, Fotografien, Bilderkuration</p>
               </div>
             </div><!-- End Team Member -->
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Manon Rupp</h4>
@@ -107,7 +107,7 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Marina_Spielberg.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Marina Spielberg</h4>
@@ -118,12 +118,12 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Carina_Zander.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Carina Zander</h4>
-                <span>Bilder</span>
-                <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+                <span>B.A. Anglistik und Slavistik</span>
+                <p>Recherche, Bilderkuration/Bildbearbeitung, Öffentlichkeitsarbeit, Logo</p>
               </div>
             </div><!-- End Team Member -->
 
@@ -142,3 +142,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.member-img img {
+  height: 350px; /* Hier kannst du die gewünschte feste Höhe eintragen */
+  object-fit: cover; /* sorgt dafür, dass das Bild das Container-Verhältnis beibehält */
+  width: 100%; /* Damit das Bild immer die volle Breite des Containers einnimmt */
+}
+</style>

@@ -12,7 +12,6 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
           <li class="dropdown"><router-link to="/"><span>Bilder</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
@@ -28,16 +27,16 @@
               <li><router-link to="/poiskarte">Markante Orte</router-link></li>
             </ul>
           </li>
-          <li class="dropdown"><router-link to="/diskurs"><span>Diskurs</span> <i
+          <li class="dropdown"><router-link to="/diskurs"><span>Politischer Diskurs</span> <i
               class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
-              <li><router-link to="/sentiment">Sentiment Rathaus</router-link></li>
-              <li><router-link to="/rathaus">Auswertung Rathauszeitung</router-link></li>
-              <li><router-link to="/textanalyse">Diskurs3</router-link></li>
+              <li><router-link to="/diskurs">Übersicht</router-link></li>
+              <li><router-link to="/sentiment">Emotionsanalyse</router-link></li>
+              <li><router-link to="/rathaus">Topic Modeling</router-link></li>
+              <li><router-link to="/textanalyse">Textanalyse</router-link></li>
             </ul>
           </li>
-          <li><router-link to="/zukunft">Zukunftsvisionen</router-link></li>
-          <li class="dropdown"><router-link to="/"><span>Extras</span> <i
+          <li class="dropdown"><router-link to="/"><span>Projekt</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
               <li><router-link to="/methoden">Methoden</router-link></li>

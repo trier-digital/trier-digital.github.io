@@ -3,10 +3,12 @@
     :class="{ 'solid': this.$route.name !== 'home' }">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <router-link to="/" class="logo d-flex align-items-center">
+      <router-link to="/" class="d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="./assets/logo.png" alt="logo">
+        <img src="./assets/logo_inverse.svg" alt="logo" width="100">
+        <div class="logo">
         <h1 class="sitename">Trier Digital</h1>
+        </div>
       </router-link>
 
       <nav id="navmenu" class="navmenu">
@@ -146,3 +148,5 @@ footer {
   transition: all 0.0s;
 }
 </style>
+<script setup lang="ts">
+</script>

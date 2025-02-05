@@ -54,7 +54,6 @@
       <img :src="preview.src" class="img-fluid" :alt="'Image in category ' + preview.cat1" />
       <div class="portfolio-info">
             <h4>{{ preview.date }}</h4>
-            <p>{{ preview.ort }}</p>
             <a :href="preview.src" :title="preview.ort" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
               <i class="bi bi-zoom-in"></i>
             </a>
@@ -84,7 +83,7 @@ export default defineComponent({
   data() {
     return {
       categories1: ["Vor 1900", "1900-1920", "1920-1940", "1940-1960", "1960-1980", "1980-heute"],
-      categories2: ["Porta Nigra", "Hauptmarkt", "Dom", "Hauptbahnhof", "Tuchfabrik", "Römerbrücke"],
+      categories2: ["Porta Nigra", "Hauptmarkt", "Dom", "Hauptbahnhof", "Tuchfabrik", "Römerbrücke", "Basilika"],
       previews: [
     {
       src: "assets/img/trier/Projektseminar Bilder/Trier,_Amphitheater_Charles_Bernhoeft.jpg",
@@ -187,7 +186,8 @@ export default defineComponent({
     licence: "Public Domain, PD-US",
     urheber: "Kulturdatenbank Region Trier",
     url: "https://commons.wikimedia.org/wiki/File:Palastkaserne_Trier_1907.jpg",
-    cat1: "1900-1920"
+    cat1: "1900-1920",
+    cat2: "Basilika"
     },
   {
       src: "assets/img/trier/Wikimedia Bilder/Straßenbahn-Trier-Henney-5.jpg",
@@ -536,7 +536,8 @@ export default defineComponent({
     licence: "CC-BY-NC-ND",
     urheber: "TV/ Josef Tietzen, Volksfreund",
     url: "https://www.volksfreund.de/fotos/regionale-fotostrecken/historische-bilder-fotos-trier-bahnhof-bernkastel-brauerei-bitburg_bid-64761297#39",
-    cat1: "1940-1960"
+    cat1: "1940-1960",
+    cat2: "Basilika"
     },
     {
     src: "assets/img/trier/Historisches Foto Wasserzeichen_Volksfreund/1.jpg",
@@ -676,6 +677,50 @@ export default defineComponent({
     url: "https://rlp.museum-digital.de/object/78304?navlang=de",
     cat1: "1980-heute",
     cat2: "Porta Nigra"
+  },
+  {
+    src: "assets/img/trier/heute_Fotos_Rebecca/P1010287.JPG",
+    date: "05.12.2024",
+    ort: "Trier, Hauptbahnhof",
+    desc: "Hauptbahnhof von vorne",
+    licence: "CC0 1.0 Universal",
+    urheber: "Rebecca Robinson",
+    url: "Nicht angegeben",
+    cat1: "1980-heute",
+    cat2: "Hauptbahnhof"
+  },
+  {
+    src: "assets/img/trier/heute_Fotos_Rebecca/P1010303.JPG",
+    date: "05.12.2024",
+    ort: "Trier, Hauptmarkt/Simeonstraße",
+    desc: "Hauptmarkt/Simeonstraße",
+    licence: "CC0 1.0 Universal",
+    urheber: "Rebecca Robinson",
+    url: "Nicht angegeben",
+    cat1: "1980-heute",
+    cat2: "Hauptmarkt"
+  },
+  {
+    src: "assets/img/trier/heute_Fotos_Rebecca/P1010305.JPG",
+    date: "05.12.2024",
+    ort: "Trier, Palastkaserne und Basilika",
+    desc: "Palastkaserne und Basilika",
+    licence: "CC0 1.0 Universal",
+    urheber: "Rebecca Robinson",
+    url: "Nicht angegeben",
+    cat1: "1980-heute",
+    cat2: "Basilika"
+  },
+  {
+    src: "assets/img/trier/heute_Fotos_Rebecca/P1010292.JPG",
+    date: "05.12.2024",
+    ort: "Trier, Dom",
+    desc: "Dom von der Seite",
+    licence: "CC0 1.0 Universal",
+    urheber: "Rebecca Robinson",
+    url: "Nicht angegeben",
+    cat1: "1980-heute",
+    cat2: "Dom"
   },
   {
     src: "assets/img/trier/Historisches Foto Wasserzeichen_Volksfreund/4.jpg",

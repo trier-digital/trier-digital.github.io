@@ -443,7 +443,7 @@ export default defineComponent({
       cat2: "Porta Nigra"
     },
     {
-      src: "assets/img/trier/Projektseminar Bilder/SC_201589-S_-_Infantrymen_of_10th_Armored_Division_dash_along_main_street_in_newly-captured_town_of_Trier,_Germany._2_March,_1945._(53008235369).jpg",
+      src: "assets/img/trier/Projektseminar Bilder/SC_201589-S_-_Infantrymen_of_10th_Armored_Division_dash_along_main_street_in_newly-captured_town_of_Trier,_Germany._2_March,_1945.jpg",
       date: "2. März 1945",
       ort: "Simeonstraße, Trier",
       desc: "Photographer: T/5 Ornitz, 166th Signal Photo Co.",

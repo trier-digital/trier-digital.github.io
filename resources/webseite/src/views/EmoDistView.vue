@@ -1,12 +1,15 @@
 <script>
 import GLightbox from 'glightbox'; // Importiere GLightbox
 import 'glightbox/dist/css/glightbox.css'; // Importiere das CSS für GLightbox
+import EmoArrows from "@/components/EmoArrows.vue";
 
 export default {
   name: "EmoDist",
+  components: {EmoArrows},
   data() {
     return {
-      link: "assets/img/svg/sentiment/emotion_pie_chart.svg"
+      link: "assets/img/svg/sentiment/emotion_pie_chart.svg",
+      right: "emodistpartei"
     }
   },
   mounted() {
@@ -57,6 +60,7 @@ export default {
         </p>
       </div>
     </div>
+    <EmoArrows :right="right" />
   </div>
 </template>
 
@@ -69,7 +73,7 @@ export default {
   transform: scale(1.05);
 }
 
-img{
+img {
   cursor: pointer;
 }
 </style>

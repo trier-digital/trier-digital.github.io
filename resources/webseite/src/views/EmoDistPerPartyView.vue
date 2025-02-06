@@ -1,11 +1,12 @@
 <script>
 import Carousel from "@/components/Carousel.vue"
+import EmoArrows from "@/components/EmoArrows.vue";
 
 const root = "assets/img/svg/party/"
 
 export default {
   name: "EmoDistPerPartyView",
-  components: {Carousel: Carousel},
+  components: {EmoArrows, Carousel: Carousel},
   data() {
     return {
       links: [
@@ -16,7 +17,9 @@ export default {
         root + 'FDP_emotion_distribution.svg',
         root + 'SPD_emotion_distribution.svg',
         root + 'UBT-FWG-UBM_emotion_distribution.svg'
-      ]
+      ],
+      left: "emodist",
+      right: "emodistprozent"
     }
   }
 }
@@ -60,6 +63,7 @@ export default {
           tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </p></div>
     </div>
+    <EmoArrows :left="left" :right="right"/>
   </div>
 </template>
 

@@ -40,14 +40,20 @@ export default {
     </div>
     <div class="d-flex flex-column gap-3 justify-content-center w-25">
       <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-        <div class="service-item item-red position-relative zoom d-flex flex-column">
+        <figure>
+        <div class="service-item item-red position-relative d-flex flex-column">
           <img src="@/assets/img/svg/sentiment/entries_per_party.svg" alt="entries" class="glightbox zoom">
+          <span>Abbildung 1</span>
         </div>
+        </figure>
       </div>
       <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-        <div class="service-item item-red position-relative zoom d-flex flex-column">
+        <figure>
+        <div class="service-item item-red position-relative d-flex flex-column">
           <img src="@/assets/img/svg/sentiment/score_distribution.svg" alt="score_distribution" class="glightbox zoom">
+          <span>Abbildung 2</span>
         </div>
+        </figure>
       </div>
     </div>
   </div>

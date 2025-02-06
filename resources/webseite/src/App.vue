@@ -34,7 +34,7 @@
             <ul>
               <li><router-link to="/diskurs">Übersicht</router-link></li>
               <li><router-link to="/sentiment">Emotionsanalyse</router-link></li>
-              <li><router-link to="/rathaus">Topic Modeling</router-link></li>
+              <li><router-link to="/topics">Topic Modeling</router-link></li>
               <li><router-link to="/textanalyse">Textanalyse</router-link></li>
             </ul>
           </li>

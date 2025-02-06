@@ -14,11 +14,11 @@ export default {
         ],
         [
           root + "parteiname_emotion_distribution.svg",
-          "rathaus"
+          "topics"
         ],
         [
           root + "interactive_emotion_chart.svg",
-          "/"
+          "textanalyse"
         ]
       ]
     }
@@ -52,7 +52,7 @@ export default {
             </div></div>
         </div>
         <!-- End Item 2 -->
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
           <div class="service-item item-teal position-relative zoom d-flex flex-column justify-content-between">
             <div></div>
 

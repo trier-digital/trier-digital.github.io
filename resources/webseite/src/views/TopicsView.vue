@@ -1,10 +1,14 @@
 <script>
+import EmoArrows from "@/components/EmoArrows.vue";
+
 export default {
   name: "TopicsView",
+  components: {EmoArrows},
   data() {
     return {
       graph_1: "assets/topics/intertopic_distance_map.html",
-      graph_2: "assets/topics/topic_barcharts.html"
+      graph_2: "assets/topics/topic_barcharts.html",
+      right: "topicsdist"
     }
   }
 }
@@ -45,6 +49,7 @@ export default {
         <iframe :src="graph_2" width="100%" height="3300"></iframe>
       </div>
     </div>
+    <EmoArrows :right="right" />
   </div>
 </template>
 

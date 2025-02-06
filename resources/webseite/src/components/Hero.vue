@@ -1,18 +1,22 @@
 <template>
-    <div id="hero" class="hero dark-background">
-        <div class="home">
-            Trier Digital
-        </div>
+  <div id="hero" class="hero dark-background">
+    <div class="container">
+      <div class="">
+        <img src="@/assets/logo_inverse.svg" alt="Logo" class="w-50 mx-auto d-block">
+      </div>
     </div>
+  </div>
 </template>
 
 
 <script>
 export default {
-    name: 'Hero',
+  name: 'Hero',
 };
 </script>
 
 <style>
-/* Optional: Add your custom styles here */
+.home {
+  z-index: 10;
+}
 </style>

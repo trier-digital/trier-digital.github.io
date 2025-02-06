@@ -10,7 +10,9 @@ export default {
 </script>
 <template>
   <div class="about">
-    <h1 class="page-title">Übersicht Diskurs</h1>
+    <div class="">
+      <h1 class="page-title dark-background">Politischer Diskurs</h1>
+    </div>
     <DiskursBoxes></DiskursBoxes>
   </div>
 </template>

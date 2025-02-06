@@ -1,9 +1,14 @@
 <script>
+import EmoArrows from "@/components/EmoArrows.vue";
+
 export default {
   name: "EmoDistPercentView",
+  components: {EmoArrows},
   data() {
     return {
-      link: "assets/sentiment/interactive_emotion_chart.html"
+      link: "assets/sentiment/interactive_emotion_chart.html",
+      left: "emodistpartei",
+      right: "emowort"
     }
   }
 }
@@ -45,6 +50,7 @@ export default {
           tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </p></div>
     </div>
+    <EmoArrows :left="left" :right="right"/>
   </div>
 </template>
 

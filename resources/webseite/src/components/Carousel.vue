@@ -5,7 +5,7 @@
     <div class="carousel-inner">
       <div v-for="(link, index) in cardata" :key="index">
         <div class="carousel-item" :class="{ active: index === 0 }">
-          <img :src="link" class="d-block mx-auto" :class="size" alt="...">
+          <img :src="link" class="d-block mx-auto glightbox zoom" :class="size" alt="...">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -37,11 +37,20 @@
 </template>
 
 <script>
+import GLightbox from 'glightbox'; // Importiere GLightbox
+import 'glightbox/dist/css/glightbox.css'; // Importiere das CSS für GLightbox
+
 export default {
   name: 'Carousel',
   props: {
     cardata: Array,
     size: String,
+  },
+  mounted() {
+    // Initialisiere GLightbox, wenn die Komponente gemountet wird (für Galerie-Anzeige, wenn man auf ein Bild klickt)
+    const lightbox = GLightbox({
+      selector: '.glightbox' // GLightbox auf alle Elemente mit der Klasse .glightbox anwenden
+    })
   }
 }
 </script>
@@ -54,6 +63,18 @@ export default {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+img{
+  cursor: pointer;
 }
 </style>
 

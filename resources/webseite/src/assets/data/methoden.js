@@ -3,6 +3,18 @@ const questions = [
         id: 1,
         title: "Do I have to allow the use of cookies?",
         info: "<p>Unicorn vinyl poutine brooklyn, next level direct</p> <p>trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.</p>",
+        sub: [
+            {
+                id: 1,
+                title: "Sub 1",
+                info: "Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.",
+            },
+            {
+                id: 2,
+                title: "Sub 2",
+                info: "Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ",
+            }
+        ]
     },
     {
         id: 2,

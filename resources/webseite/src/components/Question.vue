@@ -1,5 +1,5 @@
 <template>
-  <article class="question">
+  <article class="question" :class="{ expanded }">
     <header>
       <h4 @click="expanded = !expanded" class="question-title">
         {{ title }}
@@ -13,12 +13,7 @@
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20 12H4"
-          ></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
         </svg>
         <svg
             v-show="!expanded"
@@ -28,46 +23,43 @@
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-          ></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
         </svg>
       </button>
     </header>
-    <div :style="contentStyle" class="content">
-      <p :style="infoStyle" class="info" v-html="info"></p>
+    <div class="content" v-if="expanded">
+      <p class="info" v-html="info"></p>
+      <!-- Rekursive Unterfragen direkt in das bestehende Panel setzen -->
+      <Question
+          v-for="subquestion in sub"
+          :key="subquestion.id"
+          :title="subquestion.title"
+          :info="subquestion.info"
+          :sub="subquestion.sub"
+          class="subquestion"
+      />
     </div>
   </article>
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 
 export default {
   name: "Question",
   props: {
     title: String,
     info: String,
+    sub: Array, // `sub` sollte ein Array sein, falls mehrere Unterfragen existieren
   },
   setup() {
     const expanded = ref(false);
-    const contentStyle = computed(() => {
-      return { "max-height": expanded.value ? "100px" : 0 };
-    });
 
-    const infoStyle = computed(() => {
-      return { opacity: expanded.value ? 1 : 0 };
-    });
-
-    return { expanded, contentStyle, infoStyle };
+    return { expanded };
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .question {
   padding: 1rem 1.5rem;
@@ -75,24 +67,31 @@ export default {
   margin-bottom: 1rem;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
+  transition: all 0.3s ease-in-out;
 }
+
+.question.expanded {
+  border-color: var(""); /* Optional: Farbe ändern, wenn geöffnet */
+}
+
 .question h4 {
   text-transform: none;
   line-height: 1.5;
+  cursor: pointer;
 }
+
 .question p {
   color: var(--clr-grey-3);
   margin-bottom: 0;
   margin-top: 0.5rem;
 }
+
 .question header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.question header h4 {
-  margin-bottom: 0;
-}
+
 .btn {
   background: transparent;
   border-color: transparent;
@@ -106,22 +105,23 @@ export default {
   color: var(--clr-red-special);
   cursor: pointer;
   margin-left: 1rem;
-  align-self: center;
   min-width: 2rem;
-  z-index: 1;
-}
-
-.question-title {
-  cursor: pointer;
 }
 
 .content {
+  overflow: hidden;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
-.info {
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.2s ease-out;
+
+.question.expanded .content {
+  max-height: 1000px; /* Sehr großer Wert, damit Inhalt sichtbar wird */
+  opacity: 1;
+}
+
+.subquestion {
+  margin-left: 1rem;
+  border-left: 2px solid var(--clr-grey-special);
+  padding-left: 1rem;
 }
 </style>

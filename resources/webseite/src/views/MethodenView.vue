@@ -1,11 +1,30 @@
+<script>
+import Accordion from "@/components/Accordion.vue";
+import Questions from "@/components/Questions.vue";
+
+import {reactive} from "vue";
+import data from "@/assets/data/methoden";
+
+export default {
+  name: "App",
+  components: {
+    Questions,
+  },
+  setup() {
+    const questions = reactive(data);
+
+    return {questions};
+  },
+};
+</script>
+
 <template>
-    <div class="about">
-        <h1 class="page-title">This is a methods page</h1>
-    </div>
+  <h1 class="page-title dark-background">Methoden</h1>
+  <div class="container">
+    <h2>Methoden der Digital Humanities</h2>
+    <Questions :questions="questions"/>
+  </div>
 </template>
 
-<script>
-export default{
-    name: "MethodenView"
-}
-</script>
+<style scoped>
+</style>

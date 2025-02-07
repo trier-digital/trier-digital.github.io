@@ -1,9 +1,6 @@
 <template>
   <Hero></Hero>
   <div id="home-container" class="home-container">
-    <div class="home">
-      <HelloWorld msg="Trier Digital" />
-    </div>
     <Counter/>
     <div>
       <Intro></Intro>

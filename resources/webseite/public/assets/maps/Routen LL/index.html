@@ -22,19 +22,19 @@
     </head>
     <body>
         <!--Neu hinzugefügter Code-->
-        <div id="controls" style="position: absolute; top: 10px; left: 10px; background: white; padding: 10px;">
+        <div id="controls">
             <label><input type="checkbox" id="route1" checked> Nie wieder ist jetzt 07.04.24</label><br>
             <label><input type="checkbox" id="route2" checked> Landwirte 26.02.24</label><br>
             <label><input type="checkbox" id="route3" checked> Bauernproteste 11.01.24</label><br>
             <label><input type="checkbox" id="route4" checked> Bauernprotest 12.01.24</label><br>
             <label><input type="checkbox" id="route5" checked> Martinsumzüge 8.-16.11.24</label><br>
             <label><input type="checkbox" id="route6" checked> Traktorendemo 08.01.24</label><br>
-            <label><input type="checkbox" id="route1" checked> Recycling- und Transportbranche 26.01.24</label><br>
-            <label><input type="checkbox" id="route1" checked> CSD 27.07.24</label><br>
-            <label><input type="checkbox" id="route1" checked> Fronleichnam 30.05.25</label><br>
-            <label><input type="checkbox" id="route1" checked> Firmenlauf 30.06.24</label><br>
-            <label><input type="checkbox" id="route1" checked> Internationaler Trierer Stadtlauf 24.06.24</label><br>
-            <label><input type="checkbox" id="route1" checked> Karneval 10.-13.02.24</label><br>
+            <label><input type="checkbox" id="route7" checked> Recycling- und Transportbranche 26.01.24</label><br>
+            <label><input type="checkbox" id="route8" checked> CSD 27.07.24</label><br>
+            <label><input type="checkbox" id="route9" checked> Fronleichnam 30.05.25</label><br>
+            <label><input type="checkbox" id="route10" checked> Firmenlauf 30.06.24</label><br>
+            <label><input type="checkbox" id="route11" checked> Internationaler Trierer Stadtlauf 24.06.24</label><br>
+            <label><input type="checkbox" id="route12" checked> Karneval 10.-13.02.24</label><br>
 
         </div>
         <style>
@@ -42,7 +42,7 @@
         #controls {
             position: absolute;
             top: 10px;
-            left: 10px;
+            left: 50px;
             background: white;
             padding: 10px;
             z-index: 1000; /* Damit die Checkboxen über der Karte liegen */
@@ -847,6 +847,44 @@
         bounds_group.addLayer(layer_InternationalerTriererStadtlauf240624_12);
         map.addLayer(layer_InternationalerTriererStadtlauf240624_12);
         setBounds();
+
+
+
+
+        /*Neu hinzugefügter Code*/
+        // Mapping von Checkbox-IDs zu Layer-Objekten
+        var layers = {
+            "route1": layer_Niewiederistjetzt07042024_1,
+            "route2": layer_Landwirte26022024_2,
+            "route3": layer_Bauernproteste11012024_3,
+            "route4": layer_Bauernprotest12012024_4,
+            "route5": layer_Martinsumzge8161124_5,
+            "route6": layer_Traktorendemo080124_6,
+            "route7": layer_RecyclingundTransportbranche260124_7,
+            "route8": layer_CSD270724_8,
+            "route9": layer_Fronleichnahm300525_9,
+            "route10": layer_Firmenlauf30062024_10,
+            "route11": layer_InternationalerTriererStadtlauf240624_12,
+            "route12": layer_Karneval10130224_11
+        };
+
+        // Funktion zum Umschalten der Routen
+        function toggleRoute(event) {
+            var checkbox = event.target;
+            var layer = layers[checkbox.id];
+
+            if (checkbox.checked) {
+                map.addLayer(layer);
+            } else {
+                map.removeLayer(layer);
+            }
+        }
+
+        // Event-Listener für alle Checkboxen hinzufügen
+        document.querySelectorAll("#controls input[type='checkbox']").forEach(function(checkbox) {
+            checkbox.addEventListener("change", toggleRoute);
+        });
+
         </script>
     </body>
 </html>

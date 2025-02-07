@@ -99,7 +99,7 @@
                 <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Manon Rupp</h4>
+                <h4>Manon R.</h4>
                 <span>B.A. Philosophie und Geschichte</span>
                 <p>Emotionsanalyse, Visualisierungen, Recherche</p>
               </div>

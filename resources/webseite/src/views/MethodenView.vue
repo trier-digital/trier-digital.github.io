@@ -20,7 +20,9 @@ export default {
 <template>
   <h1 class="page-title dark-background">Methoden</h1>
   <div class="container">
-    <h2>Methoden der Digital Humanities</h2>
+    <div class="mt-5">
+      <h2>Methoden der Digital Humanities</h2>
+    </div>
     <Questions :questions="questions"/>
   </div>
 </template>

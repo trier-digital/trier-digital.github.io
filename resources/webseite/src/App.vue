@@ -3,7 +3,7 @@
     :class="{ 'solid': this.$route.name !== 'home' }">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <router-link to="/" class="d-flex align-items-center">
+      <router-link to="/" class="d-flex align-items-center dedec">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="./assets/logo_inverse.svg" alt="logo" width="100">
         <div class="logo">
@@ -109,6 +109,10 @@ footer {
 .solid {
   background-color: #1e4356;
   transition: all 0.0s;
+}
+
+.dedec{
+  text-decoration: none;
 }
 </style>
 <script setup lang="ts">

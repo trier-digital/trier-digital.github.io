@@ -38,8 +38,10 @@
       </button>
     </header>
     <div :style="contentStyle" class="content">
-      <p :style="infoStyle" class="info" v-html="info"></p>
-      <div v-if="sub && expanded" class="">
+      <div :style="infoStyle" class="info">
+        <div v-html="info"></div>
+      </div>
+      <div v-if="sub && expanded" class="mt-5">
         <Question
             v-for="subquestion in sub"
             :key="subquestion.id"
@@ -60,7 +62,7 @@ export default {
   props: {
     title: String,
     info: String,
-    sub: Array
+    sub: Array,
   },
   setup() {
     const expanded = ref(false);
@@ -78,7 +80,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .question {
   padding: 1rem 1.5rem;
   border: 2px solid var(--clr-grey-special);
@@ -89,6 +91,7 @@ export default {
 .question h4 {
   text-transform: none;
   line-height: 1.5;
+  z-index: 10;
 }
 .question p {
   color: var(--clr-grey-3);
@@ -127,11 +130,11 @@ export default {
 
 .content {
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 .info {
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 </style>

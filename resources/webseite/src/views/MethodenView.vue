@@ -1,5 +1,4 @@
 <script>
-import Accordion from "@/components/Accordion.vue";
 import Questions from "@/components/Questions.vue";
 
 import {reactive} from "vue";

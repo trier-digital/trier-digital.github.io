@@ -11,7 +11,6 @@
 
 <script>
 import Question from "./Question";
-import "@/assets/css/accordion.css";
 
 export default {
   name: "App",
@@ -24,4 +23,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped>
+@import "@/assets/css/accordion.css";
+</style>

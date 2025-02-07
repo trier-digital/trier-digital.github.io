@@ -8,10 +8,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Nune.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Nune.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Nune Arazyan</h4>
+                <h4>Nune A.</h4>
                 <span>B.A. Kulturwissenschaft und Deutsche Literatur</span>
                 <p>Georeferenzierung historischer Karten, Trierer Routen, Recherche</p>
               </div>
@@ -19,10 +19,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Dennis Binz</h4>
+                <h4>Dennis B.</h4>
                 <span>B.Sc. Sprache, Technologie, Medien</span>
                 <p>Webseite</p>
               </div>
@@ -30,10 +30,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Naemi_Bürger.jpeg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Naemi_Bürger.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Naemi Bürger</h4>
+                <h4>Naemi B.</h4>
                 <span>B.A. Mehrsprachige Kommunikation</span>
                 <p>Recherche, Fotografien/Bildbearbeitung, Georeferenzierung</p>
               </div>
@@ -41,10 +41,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Rebecca Daniel</h4>
+                <h4>Rebecca D.</h4>
                 <span>B.A. Museologie</span>
                 <p>Erstellung des Textkorpus, Textanalyse, Informationsvisualisierung</p>
               </div>
@@ -52,10 +52,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Foto_RachelGeorg.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Foto_RachelGeorg.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Rachel Georg</h4>
+                <h4>Rachel G.</h4>
                 <span>B.Sc. Informatik</span>
                 <p>Webseite, Recherche</p>
               </div>
@@ -63,10 +63,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Nele Mantaj</h4>
+                <h4>Nele M.</h4>
                 <span>B.A. Geschichte und Klassische Archäologie</span>
                 <p>Recherche, Georeferenzierung historischer Karten</p>
               </div>
@@ -74,10 +74,10 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Bianca Ottenberg</h4>
+                <h4>Bianca O.</h4>
                 <span>B.A. Allgemeine Sprachwissenschaft und Psychologie</span>
                 <p>Korpusanalyse (Schwerpunkt Topic Modeling), Informationsvisualisierung</p>
               </div>
@@ -85,10 +85,10 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Rebecca_Robinson.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/Rebecca_Robinson.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Rebecca Robinson</h4>
+                <h4>Rebecca R.</h4>
                 <span>B.A. Literaturwissenschaften und Philosophie</span>
                 <p>Öffentlichkeitsarbeit, Recherche, Fotografien, Bilderkuration</p>
               </div>
@@ -96,7 +96,7 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Manon R.</h4>
@@ -107,10 +107,10 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Marina_Spielberg.jpeg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Marina_Spielberg.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Marina Spielberg</h4>
+                <h4>Marina S.</h4>
                 <span>B.A. Anglistik und Psychologie</span>
                 <p>Emotionsanalyse, Visualisierungen, Recherche</p>
               </div>
@@ -118,10 +118,10 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Carina_Zander.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Carina_Zander.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Carina Zander</h4>
+                <h4>Carina Z.</h4>
                 <span>B.A. Anglistik und Slavistik</span>
                 <p>Recherche, Bilderkuration/Bildbearbeitung, Öffentlichkeitsarbeit, Logo</p>
               </div>

@@ -17,7 +17,7 @@
   </div>
   <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
     <p>
-      Das Projekt Trier digital – Wandel sichtbar machen wurde im Rahmen des Masterstudiengangs Digital Humanities an der Universität Trier von elf Studierenden entwickelt. Unter der fachkundigen Betreuung von Dr. Joëlle Weis und Dr. Élodie Ripoll vereinen wir unterschiedliche geistes-, sprach-, kultur- und informationswissenschaftliche Perspektiven, um den Wandel der Stadt Trier aus einer breiten, interdisziplinären Sichtweise zu beleuchten.
+      Das Projekt „Trier Digital – Wandel sichtbar machen“ wurde im Rahmen des Masterstudiengangs Digital Humanities an der Universität Trier von elf Studierenden entwickelt. Unter der fachkundigen Betreuung von Dr. Joëlle Weis und Dr. Élodie Ripoll vereinen wir unterschiedliche geistes-, sprach-, kultur- und informationswissenschaftliche Perspektiven, um den Wandel der Stadt Trier aus einer breiten, interdisziplinären Sichtweise zu beleuchten.
     </p>
     <p>
       Unsere akademischen Hintergründe reichen von Literatur-, Sprach- und Kulturwissenschaften über Museologie, Translationswissenschaften, Philosophie, Psychologie und Geschichte bis hin zur Informatik. Diese interdisziplinäre Vielfalt ermöglicht es uns, das Projekt aus unterschiedlichen Blickwinkeln zu gestalten und spiegelt die Kernidee der Digital Humanities wider: die Verbindung von Technologie und Geisteswissenschaften zur Erschließung neuer Perspektiven.

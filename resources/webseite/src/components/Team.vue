@@ -12,7 +12,7 @@
               </div>
               <div class="member-info text-center">
                 <h4>Nune Arazyan</h4>
-                <span>B.A. Kulturwissenschaft und Deutsche Literatur</span>
+                <span>Kombi-B.A. Kulturwissenschaft & Deutsche Literatur </span>
                 <p>Georeferenzierung historischer Karten, Trierer Routen, Recherche</p>
               </div>
             </div><!-- End Team Member -->
@@ -41,12 +41,12 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="assets/img/team/Daniel_Foto.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Rebecca Daniel</h4>
                 <span>B.A. Museologie</span>
-                <p>Erstellung des Textkorpus, Textanalyse, Informationsvisualisierung</p>
+                <p>Korpuserstellung, Korpusanalyse: Natural Language Processing, Informationsvisualisierung</p>
               </div>
             </div><!-- End Team Member -->
   
@@ -74,12 +74,12 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="assets/img/team/Bianca.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Bianca Ottenberg</h4>
+                <h4>B. O.</h4>
                 <span>B.A. Allgemeine Sprachwissenschaft und Psychologie</span>
-                <p>Korpusanalyse (Schwerpunkt Topic Modeling), Informationsvisualisierung</p>
+                <p>Korpusanalyse: Topic Modeling, Informationsvisualisierung</p>
               </div>
             </div><!-- End Team Member -->
 
@@ -99,9 +99,9 @@
                 <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
-                <h4>Manon Rupp</h4>
+                <h4>M. R.</h4>
                 <span>B.A. Philosophie und Geschichte</span>
-                <p>Emotionsanalyse, Visualisierungen, Recherche</p>
+                <p>Korpusanalyse: Emotionsanalyse, Informationsvisualisierungen, Recherche</p>
               </div>
             </div><!-- End Team Member -->
 
@@ -112,7 +112,7 @@
               <div class="member-info text-center">
                 <h4>Marina Spielberg</h4>
                 <span>B.A. Anglistik und Psychologie</span>
-                <p>Emotionsanalyse, Visualisierungen, Recherche</p>
+                <p>Korpusanalyse: Emotionsanalyse, Informationsvisualisierungen, Recherche</p>
               </div>
             </div><!-- End Team Member -->
 
@@ -123,7 +123,7 @@
               <div class="member-info text-center">
                 <h4>Carina Zander</h4>
                 <span>B.A. Anglistik und Slavistik</span>
-                <p>Recherche, Bilderkuration/Bildbearbeitung, Öffentlichkeitsarbeit, Logo</p>
+                <p>Recherche, Bildkuration, Öffentlichkeitsarbeit, Logo</p>
               </div>
             </div><!-- End Team Member -->
 

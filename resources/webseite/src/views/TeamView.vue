@@ -13,7 +13,7 @@
 
 <div class="row gy-4">
   <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-    <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
+    <img src="/assets/img/team/team.jpg" class="img-fluid" alt="">
   </div>
   <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
     <p>

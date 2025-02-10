@@ -10,11 +10,11 @@ export default {
       test,
       links: [
         [
-          root + "topic_overview.png",
+          "assets/img/trier/Wikimedia Bilder/Trier_Hauptmarkt.jpg",
           "bildergalerie"
         ],
         [
-          root + "topic_party.png",
+          "assets/maps/Vorschaubilder/Trier 1894 LL_vorschau.jpg",
           "karten"
         ],
         [

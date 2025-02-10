@@ -392,13 +392,6 @@ export default {
     </div>
 </div><!-- End Page Title -->
 
-<div class="full-height d-flex justify-content-center align-items-center">
-    <div class="centered-container">
-      <DropdownImage :dropdown="dropdown" :previews="images"></DropdownImage>
-      </div>
-    
-</div>
-
 <div class="container"><!--Erster Text mit Bild-->
 
     <div class="row gy-4 align-items-center features-item">
@@ -406,13 +399,13 @@ export default {
         <figure class="image-container">
           <img src="assets\img\Auswertung Rathauszeitung - Rebecca\Häufigkeiten_Top10_POIs.svg" class="pt-4 img-fluid" alt="">
           <figcaption>
-            <p class="fst-italic">So häufig kamen die POIs im Rathaus-Korpus vor.</p>
+            <p class="fst-italic" style="margin-left: 50px;">So häufig kamen die POIs im Rathaus-Korpus vor.</p>
           </figcaption>
         </figure>
       </div>
 
       <div class="col-md-7 order-1 order-md-1">
-            <h4>Über welche Orte diskutieren die Parteien in Trier und welche Standpunkte nehmen sie hierbei ein?</h4>
+            <h2>Über welche Orte diskutieren die Parteien in Trier und welche Standpunkte nehmen sie hierbei ein?</h2>
             <p>
             Hierfür wurden die Aussagen der Parteien, die sie in der stadteigenen Rathauszeitung getätigt haben, von uns in ein Korpus zusammengefügt und diese Texte automatisiert nach Örtlichkeiten in Trier durchsucht.
             </p>
@@ -479,8 +472,26 @@ export default {
 </div>
 </div>
 
-
-
+<div class="container"><!-- Fußnote -->
+  <div class="pt-4 align-items-center features-item">
+        <p>
+            <b>*</b> Quellenverweise der Bilder von Theater und Exhaus:
+            </p>
+        <ul>
+            <li>
+                Theater:
+                Lizenz: CC BY-SA 3.0 <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en"><img src="assets/img/copyright/by-sa.svg" height="25px"></a> ,
+                Urheber: Stefan Kühn,
+                URL: <a href="https://commons.wikimedia.org/wiki/File:Theater_Trier_Germany.jpg">URL</a>
+            </li>
+            <li>
+                Exhaus:
+                Lizenz: Public Domain <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en"><img src="assets/img/copyright/pd.svg" height="25px"></a> ,
+                URL: <a href="https://commons.wikimedia.org/wiki/File:Trier_Zurmaiener_Strasse_114_2.jpg">URL</a>
+            </li>
+        </ul>
+  </div>
+</div>
 
 
 
@@ -492,10 +503,6 @@ export default {
 </template>
 
 <style scoped>
-
-.image-container .figcaption {
-  margin-left: 50px; /* Schiebt die Bildunterschrift etwas nach rechts */
-}
 
 /* Stil für das Bild innerhalb der DropdownImage-Komponente */
 .custom-container img {

@@ -2,7 +2,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
     <div class="container position-relative">
-      <h1>Wichtige Orte der Stadt</h1>
+      <h1>Markante Orte der Stadt</h1>
     </div> 
     </div><!-- End Page Title -->
 

@@ -27,6 +27,7 @@
               <li><router-link to="/karten">Karten der Stadt Trier</router-link></li>
               <li><router-link to="/routenkarte">Routen in Trier</router-link></li>
               <li><router-link to="/poiskarte">Markante Orte</router-link></li>
+              <li><router-link to="/poisrathauszeitungkarte">Orte aus der Diskursanalyse</router-link></li>
             </ul>
           </li>
           <li class="dropdown"><router-link to="/diskurs"><span>Politischer Diskurs</span> <i

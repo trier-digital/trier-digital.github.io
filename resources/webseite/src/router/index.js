@@ -156,6 +156,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/POIKarteView.vue')
   },
   {
+    path: '/poisrathauszeitungkarte',
+    name: 'poisrathauszeitungkarte',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/POIKarteRathauszeitungView.vue')
+  },
+  {
     path: '/topicstime',
     name: 'topicstime',
     // route level code-splitting

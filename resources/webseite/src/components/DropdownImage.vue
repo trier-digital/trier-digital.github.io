@@ -17,7 +17,12 @@
       </div>
 
       <div v-if="filteredPreviews.length > 0">
-       <img :src="filteredPreviews[0].src" alt="...">
+        <img 
+          :src="filteredPreviews[0].src" 
+          alt="..."
+          :width="width || undefined"
+          :height="height || undefined"
+        />
       </div>
 
     </div>
@@ -74,8 +79,10 @@ export default defineComponent({
   },*/
   props:{
     dropdown: Object,
-    previews: Object
-  },
+    previews: Object,
+    width: String,
+    height: String
+    },
   computed: {
     filteredPreviews() {
       return this.previews.filter(

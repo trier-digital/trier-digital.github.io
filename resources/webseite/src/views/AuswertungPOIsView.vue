@@ -462,7 +462,12 @@ export default {
   </div>
 <div class="container">
     <div class="justify-content-center border border-dark custom-container">
-      <DropdownImage :dropdown="dropdown" :previews="images"></DropdownImage>
+        <DropdownImage 
+            :dropdown="dropdown" 
+            :previews="images" 
+            width="60%" 
+            height="30%" 
+        />
     </div>
 </div>
 <div class="pt-4 align-items-center features-item small-image">
@@ -504,13 +509,13 @@ export default {
 
 <style scoped>
 
-/* Stil für das Bild innerhalb der DropdownImage-Komponente */
-.custom-container img {
-  max-width: 100px !important; /* Bild skaliert auf die Containergröße */
-  height: auto; /* Höhe wird automatisch angepasst */
-  object-fit: contain;
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
-
 
 .preview {
   max-width: 300px !important; /* Maximale Breite des Containers */

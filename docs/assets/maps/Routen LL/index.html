@@ -21,6 +21,37 @@
         <title></title>
     </head>
     <body>
+        <!--Neu hinzugefügter Code-->
+        <div id="controls">
+            <label><input type="checkbox" id="route1" checked> Nie wieder ist jetzt 07.04.24</label><br>
+            <label><input type="checkbox" id="route2" checked> Landwirte 26.02.24</label><br>
+            <label><input type="checkbox" id="route3" checked> Bauernproteste 11.01.24</label><br>
+            <label><input type="checkbox" id="route4" checked> Bauernprotest 12.01.24</label><br>
+            <label><input type="checkbox" id="route5" checked> Martinsumzüge 8.-16.11.24</label><br>
+            <label><input type="checkbox" id="route6" checked> Traktorendemo 08.01.24</label><br>
+            <label><input type="checkbox" id="route7" checked> Recycling- und Transportbranche 26.01.24</label><br>
+            <label><input type="checkbox" id="route8" checked> CSD 27.07.24</label><br>
+            <label><input type="checkbox" id="route9" checked> Fronleichnam 30.05.25</label><br>
+            <label><input type="checkbox" id="route10" checked> Firmenlauf 30.06.24</label><br>
+            <label><input type="checkbox" id="route11" checked> Internationaler Trierer Stadtlauf 24.06.24</label><br>
+            <label><input type="checkbox" id="route12" checked> Karneval 10.-13.02.24</label><br>
+
+        </div>
+        <style>
+        /* Stil für das Kontrollfeld (Checkboxen) */
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            background: white;
+            padding: 10px;
+            z-index: 1000; /* Damit die Checkboxen über der Karte liegen */
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        </style>
+        <!--Neu hinzugefügter Code Ende-->
+        
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -101,11 +132,16 @@
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
         function pop_Niewiederistjetzt07042024_1(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Nie wieder ist jetzt 07.04.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -154,11 +190,16 @@
         bounds_group.addLayer(layer_Niewiederistjetzt07042024_1);
         map.addLayer(layer_Niewiederistjetzt07042024_1);
         function pop_Landwirte26022024_2(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Landwirte 26.02.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -207,11 +248,16 @@
         bounds_group.addLayer(layer_Landwirte26022024_2);
         map.addLayer(layer_Landwirte26022024_2);
         function pop_Bauernproteste11012024_3(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Bauernproteste 11.01.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -260,11 +306,16 @@
         bounds_group.addLayer(layer_Bauernproteste11012024_3);
         map.addLayer(layer_Bauernproteste11012024_3);
         function pop_Bauernprotest12012024_4(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Bauernproteste 12.01.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -313,11 +364,16 @@
         bounds_group.addLayer(layer_Bauernprotest12012024_4);
         map.addLayer(layer_Bauernprotest12012024_4);
         function pop_Martinsumzge8161124_5(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Martinsumzüge 8.-16.11.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -366,11 +422,16 @@
         bounds_group.addLayer(layer_Martinsumzge8161124_5);
         map.addLayer(layer_Martinsumzge8161124_5);
         function pop_Traktorendemo080124_6(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Traktorendemo 08.01.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -419,11 +480,16 @@
         bounds_group.addLayer(layer_Traktorendemo080124_6);
         map.addLayer(layer_Traktorendemo080124_6);
         function pop_RecyclingundTransportbranche260124_7(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Recycling- und Transportbranche 26.01.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -472,11 +538,16 @@
         bounds_group.addLayer(layer_RecyclingundTransportbranche260124_7);
         map.addLayer(layer_RecyclingundTransportbranche260124_7);
         function pop_CSD270724_8(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>CSD 27.07.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -525,11 +596,16 @@
         bounds_group.addLayer(layer_CSD270724_8);
         map.addLayer(layer_CSD270724_8);
         function pop_Fronleichnahm300525_9(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Fronleichnam 30.05.25</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -577,12 +653,36 @@
         });
         bounds_group.addLayer(layer_Fronleichnahm300525_9);
         map.addLayer(layer_Fronleichnahm300525_9);
+
+
+        /*Ab hier neu hinzugefügter Code*/
+        pois = [
+            "1 Internationaler Trierer Stadtlauf 24.06.24",
+            "1 Karneval 10.-13.02.24",
+            "1 Firmenlauf 30.06.24",
+            "1 Fronleichnam 30.05.25",
+            "1 CSD 27.07.24",
+            "1 Recycling- und Transportbranche 26.01.24",
+            "1 Traktorendemo 08.01.24",
+            "1 Martinsumzüge 8.-16.11.24",
+            "4 Bauernprotest 12.01.24",
+            "3 Bauernproteste 11.01.24",
+            "2 Landwirte 26.02.24",
+            "1 Nie wieder ist jetzt 07.04.24"
+        ];
+        /*Bis hier neu hinzugefügter Code*/
+
         function pop_Firmenlauf30062024_10(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Firmenlauf 30.06.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -631,11 +731,16 @@
         bounds_group.addLayer(layer_Firmenlauf30062024_10);
         map.addLayer(layer_Firmenlauf30062024_10);
         function pop_Karneval10130224_11(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Karneval 10.-13.02.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -684,11 +789,16 @@
         bounds_group.addLayer(layer_Karneval10130224_11);
         map.addLayer(layer_Karneval10130224_11);
         function pop_InternationalerTriererStadtlauf240624_12(feature, layer) {
+            /*
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
+            */
+            var popupContent = '<p>Internationaler Trierer Stadtlauf 24.06.24</p>'
+
+
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -737,6 +847,44 @@
         bounds_group.addLayer(layer_InternationalerTriererStadtlauf240624_12);
         map.addLayer(layer_InternationalerTriererStadtlauf240624_12);
         setBounds();
+
+
+
+
+        /*Neu hinzugefügter Code*/
+        // Mapping von Checkbox-IDs zu Layer-Objekten
+        var layers = {
+            "route1": layer_Niewiederistjetzt07042024_1,
+            "route2": layer_Landwirte26022024_2,
+            "route3": layer_Bauernproteste11012024_3,
+            "route4": layer_Bauernprotest12012024_4,
+            "route5": layer_Martinsumzge8161124_5,
+            "route6": layer_Traktorendemo080124_6,
+            "route7": layer_RecyclingundTransportbranche260124_7,
+            "route8": layer_CSD270724_8,
+            "route9": layer_Fronleichnahm300525_9,
+            "route10": layer_Firmenlauf30062024_10,
+            "route11": layer_InternationalerTriererStadtlauf240624_12,
+            "route12": layer_Karneval10130224_11
+        };
+
+        // Funktion zum Umschalten der Routen
+        function toggleRoute(event) {
+            var checkbox = event.target;
+            var layer = layers[checkbox.id];
+
+            if (checkbox.checked) {
+                map.addLayer(layer);
+            } else {
+                map.removeLayer(layer);
+            }
+        }
+
+        // Event-Listener für alle Checkboxen hinzufügen
+        document.querySelectorAll("#controls input[type='checkbox']").forEach(function(checkbox) {
+            checkbox.addEventListener("change", toggleRoute);
+        });
+
         </script>
     </body>
 </html>

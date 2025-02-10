@@ -11,7 +11,7 @@ export default {
       links: [
         [
           root + "topic_overview.png",
-          "sentiment"
+          "bildergalerie"
         ],
         [
           root + "topic_party.png",
@@ -19,7 +19,7 @@ export default {
         ],
         [
           root + "topic_time.png",
-          "topics"
+          "diskurs"
         ]
       ]
     }
@@ -39,7 +39,7 @@ export default {
             <img :src="links[0][0]" alt="placeholder" class="rounded-3"/>
             <div>
               <hr class="border-opacity-50 my-3"/>
-              <router-link :to="links[0][1]" class="page-link">Topics im Überblick</router-link>
+              <router-link :to="links[0][1]" class="page-link">Historische Bilder</router-link>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default {
             <img :src="links[1][0]" alt="placeholder" class="rounded-3"/>
             <div>
               <hr class="border-opacity-50 my-3"/>
-              <router-link :to="links[1][1]" class="page-link">Topicsverteilung pro Partei</router-link>
+              <router-link :to="links[1][1]" class="page-link">Historische Karten</router-link>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default {
 
             <div>
               <hr class="border-opacity-50 my-3"/>
-              <router-link :to="links[2][1]" class="page-link">Topics über die Zeit</router-link>
+              <router-link :to="links[2][1]" class="page-link">Politischer Diskurs</router-link>
             </div>
           </div>
         </div>

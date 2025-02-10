@@ -38,37 +38,51 @@
       </button>
     </header>
     <div :style="contentStyle" class="content">
-      <p :style="infoStyle" class="info" v-html="info"></p>
+      <div :style="infoStyle" class="info">
+        <div v-html="info"></div>
+      </div>
+      <div :style="infoStyle" class="info">
+        <div v-if="sub && expanded" class="mt-5">
+          <Question
+              v-for="subquestion in sub"
+              :key="subquestion.id"
+              :title="subquestion.title"
+              :info="subquestion.info"
+              :sub="subquestion.sub"
+          />
+        </div>
+      </div>
     </div>
   </article>
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import {ref, computed} from "vue";
 
 export default {
   name: "Question",
   props: {
     title: String,
     info: String,
+    sub: Array,
   },
   setup() {
     const expanded = ref(false);
     const contentStyle = computed(() => {
-      return { "max-height": expanded.value ? "100px" : 0 };
+      return {"max-height": expanded.value ? "2000px" : 0};
     });
 
     const infoStyle = computed(() => {
-      return { opacity: expanded.value ? 1 : 0 };
+      return {opacity: expanded.value ? 1 : 0};
     });
 
-    return { expanded, contentStyle, infoStyle };
+    return {expanded, contentStyle, infoStyle};
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .question {
   padding: 1rem 1.5rem;
   border: 2px solid var(--clr-grey-special);
@@ -76,23 +90,29 @@ export default {
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
 }
+
 .question h4 {
   text-transform: none;
   line-height: 1.5;
+  z-index: 10;
 }
+
 .question p {
   color: var(--clr-grey-3);
   margin-bottom: 0;
   margin-top: 0.5rem;
 }
+
 .question header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .question header h4 {
   margin-bottom: 0;
 }
+
 .btn {
   background: transparent;
   border-color: transparent;
@@ -117,11 +137,12 @@ export default {
 
 .content {
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
+
 .info {
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 </style>

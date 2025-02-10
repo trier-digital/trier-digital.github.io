@@ -4,6 +4,7 @@
     <Counter/>
     <div>
       <Intro></Intro>
+      <HomeBoxes></HomeBoxes>
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@ import Counter from '@/components/Counter.vue';
 import HelloWorld from '@/components/HelloWorld.vue'
 import Hero from '@/components/Hero.vue';
 import Intro from '@/components/Intro.vue';
+import HomeBoxes from "@/components/HomeBoxes.vue";
 
 export default {
   name: 'HomeView',
@@ -21,7 +23,8 @@ export default {
     HelloWorld,
     Hero,
     Intro,
-    Counter
+    Counter,
+    HomeBoxes
   }
 }
 </script>

@@ -8,7 +8,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Nune.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Nune.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Nune Arazyan</h4>
@@ -19,7 +19,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Dennis Binz</h4>
@@ -30,7 +30,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Naemi_Bürger.jpeg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Naemi_Bürger.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Naemi Bürger</h4>
@@ -52,7 +52,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Foto_RachelGeorg.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Foto_RachelGeorg.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Rachel Georg</h4>
@@ -63,7 +63,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Nele Mantaj</h4>
@@ -85,7 +85,7 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Rebecca_Robinson.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/Rebecca_Robinson.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Rebecca Robinson</h4>
@@ -96,7 +96,7 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>M. R.</h4>
@@ -107,7 +107,7 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Marina_Spielberg.jpeg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Marina_Spielberg.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Marina Spielberg</h4>
@@ -118,7 +118,7 @@
 
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Carina_Zander.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/team/Carina_Zander.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Carina Zander</h4>

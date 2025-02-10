@@ -5,6 +5,7 @@
         :key="question.id"
         :title="question.title"
         :info="question.info"
+        :sub="question.sub"
     />
   </section>
 </template>

@@ -205,7 +205,16 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        window.scrollTo({top: 0, behavior: "smooth"});
+        resolve({left: 0, top: 0});
+      }, 50);
+    });
+  }
 })
+
 
 export default router

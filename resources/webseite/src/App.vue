@@ -34,9 +34,9 @@
               class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
               <li><router-link to="/diskurs">Übersicht</router-link></li>
-              <li><router-link to="/sentiment">Emotionsanalyse</router-link></li>
-              <li><router-link to="/topics">Topic Modeling</router-link></li>
               <li><router-link to="/textanalyse">Textanalyse</router-link></li>
+              <li><router-link to="/topics">Topic Modeling</router-link></li>
+              <li><router-link to="/sentiment">Emotionsanalyse</router-link></li>
             </ul>
           </li>
           <li class="dropdown"><router-link to="/"><span>Projekt</span> <i

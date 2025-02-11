@@ -1,6 +1,6 @@
 <template>
   <header id="header" class="header d-flex align-items-center fixed-top"
-    :class="{ 'solid': this.$route.name !== 'home' }">
+    :class="{ 'solid': this.$route.name !== 'home', 'float': this.$route.name == 'home' }">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <router-link to="/" class="d-flex align-items-center dedec">
@@ -108,7 +108,7 @@ footer {
 }
 
 .solid {
-  background-color: #1e4356;
+  background-color: var(--new-heading);
   transition: all 0.0s;
 }
 

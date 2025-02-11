@@ -42,7 +42,7 @@
         <div v-html="info"></div>
       </div>
       <div :style="infoStyle" class="info">
-        <div v-if="sub && expanded" class="mt-5">
+        <div v-if="sub" class="mt-5">
           <Question
               v-for="subquestion in sub"
               :key="subquestion.id"

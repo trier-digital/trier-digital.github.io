@@ -480,7 +480,7 @@ export default {
 <div class="container"><!-- Fußnote -->
   <div class="pt-4 align-items-center features-item">
         <p>
-            <b>*</b> Quellenverweise der Bilder von Theater und Exhaus:
+            <b>*</b> Quellenverweise der Bilder:
             </p>
         <ul>
             <li>
@@ -493,6 +493,12 @@ export default {
                 Exhaus:
                 Lizenz: Public Domain <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en"><img src="assets/img/copyright/pd.svg" height="25px"></a> ,
                 URL: <a href="https://commons.wikimedia.org/wiki/File:Trier_Zurmaiener_Strasse_114_2.jpg">URL</a>
+            </li>
+            <li>
+                Dom:
+                Lizenz: Alle Rechte vorbehalten – Landesarchiv Baden-Württemberg,
+                Urheber: Willy Pragher
+                URL: <a href="http://www.landesarchiv-bw.de/plink/?f=5-2116122">URL</a>
             </li>
         </ul>
   </div>

@@ -54,7 +54,7 @@
       <img :src="preview.src" class="img-fluid" :alt="'Image in category ' + preview.cat1" />
       <div class="portfolio-info">
             <h4>{{ preview.date }}</h4>
-            <a :href="preview.src" :title="preview.ort" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+            <a :href="preview.src" :title="preview.ort" :data-title="`${preview.ort} <br> <b>Lizenz:</b> ${preview.licence} <br> <b>Urheber:</b> ${preview.urheber}`" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
               <i class="bi bi-zoom-in"></i>
             </a>
             <router-link :to="`/bildergalerie/${getOriginalIndex(index)}`" title="Mehr Details" class="details-link">

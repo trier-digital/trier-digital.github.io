@@ -6,7 +6,7 @@
     <div class="container">
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
       <ul class="portfolio-filters isotope-filters">
-        <li @click="filter('all')" :class="{ selected: selectedCat1 === 'all' }">
+        <li @click="filter('all', selectedCat2)" :class="{ selected: selectedCat1 === 'all' }">
         Alle
       </li>
       <li
@@ -25,7 +25,7 @@
     <!--Zweiter Filter-->
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
       <ul class="portfolio-filters isotope-filters">
-        <li @click="filter('all')" :class="{ selected: selectedCat2 === 'all' }">
+        <li @click="filter(selectedCat1, 'all')" :class="{ selected: selectedCat2 === 'all' }">
         Alle
       </li>
       <li
@@ -44,7 +44,7 @@
 
     
     <div class="container">
-    <div class="row gy-4 isotope-container"> <!--Sorgt für die Reihen-->
+    <div ref="masonryGrid" class="row gy-4 isotope-container"> <!--Sorgt für die Reihen-->
     <div
       v-for="(preview, index) in filteredPreviews"
       :key="index"
@@ -76,6 +76,9 @@ import { defineComponent } from "vue";
 //Für Galerie-Funktionalitäten
 import GLightbox from 'glightbox'; // Importiere GLightbox
 import 'glightbox/dist/css/glightbox.css'; // Importiere das CSS für GLightbox
+
+import Masonry from "masonry-layout"; //Importiere Masonry-Layout für Bilder
+import imagesLoaded from "imagesloaded";
 
 
 export default defineComponent({
@@ -778,19 +781,70 @@ export default defineComponent({
     const lightbox = GLightbox({
       selector: '.glightbox' // GLightbox auf alle Elemente mit der Klasse .glightbox anwenden
     });
+    //Mosaik-Layout der Bilder
+    this.initMasonryWhenImagesLoaded();
   },
   methods: {
     getOriginalIndex(filteredIndex) { //um Unterseiten (Detailansicht) richtig zuzuordnen, auch wenn Filter aktiv sind
     // Suche das Element im Originalarray und gib den Index zurück
     return this.previews.indexOf(this.filteredPreviews[filteredIndex]);
     },
-    filter(category1="all", category2="all") {
-      this.selectedCat1 = category1;
-      this.selectedCat2 = category2;
-    },
     shuffle(array) {
       return array.sort(() => Math.random() - 0.5);
-    }
+    },
+    initMasonry() {
+      const grid = this.$refs.masonryGrid; // Vue 3 verwendet $refs für DOM-Zugriff
+      if (!grid) return;
+
+      this.msnry = new Masonry(grid, {
+        itemSelector: ".portfolio-item",
+        columnWidth: ".portfolio-item",
+        percentPosition: true,
+      });
+    },
+    initMasonryWhenImagesLoaded() {
+      const grid = this.$refs.masonryGrid;
+      if (!grid) return;
+
+      const images = grid.querySelectorAll("img");
+      let loadedImages = 0;
+
+      if (images.length === 0) {
+        this.initMasonry();
+        return;
+      }
+
+      images.forEach((img) => {
+        if (img.complete && img.naturalHeight !== 0) {
+          loadedImages++;
+        } else {
+          img.onload = () => {
+            loadedImages++;
+            if (loadedImages === images.length) {
+              this.initMasonry();
+            }
+          };
+          img.onerror = () => {
+            loadedImages++;
+            if (loadedImages === images.length) {
+              this.initMasonry();
+            }
+          };
+        }
+      });
+
+      if (loadedImages === images.length) {
+        this.initMasonry();
+      }
+    },
+    filter(category1 = "all", category2 = "all") {
+      this.selectedCat1 = category1;
+      this.selectedCat2 = category2;
+
+      this.$nextTick(() => {
+        this.initMasonryWhenImagesLoaded();
+      });
+    },
   },
 });
 </script>
@@ -866,6 +920,8 @@ body {
   color: var(--accent-color);
   font-weight: bold;  /* Optional: Fett gedruckter Text */
 }
+
+
 
 
 

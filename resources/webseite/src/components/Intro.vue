@@ -15,4 +15,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 </style>

@@ -5,6 +5,7 @@
     <div>
       <Intro></Intro>
       <HomeBoxes></HomeBoxes>
+      <h4>Bilder aus unserer Galerie:</h4>
       <div class="d-flex flex-row justify-content-center">
         <Carousel :cardata="imageLinks" indicators size="w-50 pt-5" class="border border-dark carousel-fixed-height"/>
       </div>
@@ -69,11 +70,16 @@ export default {
 }
 
 .carousel-fixed-height {
-  height: 400px; /* Feste Höhe für den Rahmen */
+  height: 600px; /* Feste Höhe für den Rahmen */
+  width: 1000px;
 }
 .carousel-fixed-height img {
-  max-height: 600px; /* Verhindert riesige Bilder */
+  max-height: 560px; /* Verhindert riesige Bilder */
   width: auto;
+}
+
+.home-container {
+  text-align: center;
 }
 
 </style>

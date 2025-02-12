@@ -37,6 +37,7 @@
             <div class="card-image">
               <img :src="card.preview" width="200" height="150" frameborder="0"></img>
             </div>
+            <hr v-if="index < selectedDecadeCards.length - 1"> <!-- Trennlinie außer bei letztem Element -->
           </div>
         </div>
         <div v-else class="cards-container">
@@ -353,6 +354,10 @@ export default {
   /*color: white;*/
   text-align: left;
   border-radius: 5px; /* Ecken abrunden */
+}
+
+.card-info p {
+  margin-bottom: 5px; /* Reduziert den Abstand zwischen Text und Bild */
 }
 
 .card-image {

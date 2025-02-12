@@ -48,6 +48,54 @@
           </li>
         </ul>
       </nav>
+
+
+
+ <!-- Mobile Menü Button -->
+ <button class="mobile-menu-btn d-lg-none" @click="toggleMobileMenu">
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <nav v-if="mobileMenuOpen" class="mobile-nav">
+        <ul>
+          <li><router-link to="/" @click="closeMobileMenu">Home</router-link></li>
+          <li>
+            <button @click="toggleDropdown('bilder')">Bilder <i class="bi bi-chevron-down"></i></button>
+            <ul v-if="dropdowns.bilder">
+              <li><router-link to="/bildergalerie" @click="closeMobileMenu">Bildergalerie</router-link></li>
+              <li><router-link to="/juxtapose" @click="closeMobileMenu">Trier früher und heute</router-link></li>
+            </ul>
+          </li>
+          <li>
+            <button @click="toggleDropdown('karten')">Karten <i class="bi bi-chevron-down"></i></button>
+            <ul v-if="dropdowns.karten">
+              <li><router-link to="/karten" @click="closeMobileMenu">Karten der Stadt Trier</router-link></li>
+              <li><router-link to="/routenkarte" @click="closeMobileMenu">Routen in Trier</router-link></li>
+              <li><router-link to="/poiskarte" @click="closeMobileMenu">Markante Orte</router-link></li>
+              <li><router-link to="/poisrathauszeitungkarte" @click="closeMobileMenu">Orte aus der Diskursanalyse</router-link></li>
+            </ul>
+          </li>
+          <li>
+            <button @click="toggleDropdown('diskurs')">Politischer Diskurs <i class="bi bi-chevron-down"></i></button>
+            <ul v-if="dropdowns.diskurs">
+              <li><router-link to="/diskurs" @click="closeMobileMenu">Übersicht</router-link></li>
+              <li><router-link to="/textanalyse" @click="closeMobileMenu">Textanalyse</router-link></li>
+              <li><router-link to="/topics" @click="closeMobileMenu">Topic Modeling</router-link></li>
+              <li><router-link to="/sentiment" @click="closeMobileMenu">Emotionsanalyse</router-link></li>
+            </ul>
+          </li>
+          <li>
+            <button @click="toggleDropdown('projekt')">Projekt <i class="bi bi-chevron-down"></i></button>
+            <ul v-if="dropdowns.projekt">
+              <li><router-link to="/methoden" @click="closeMobileMenu">Methoden</router-link></li>
+              <li><router-link to="/team" @click="closeMobileMenu">Team</router-link></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
     </div>
   </header>
   <router-view />
@@ -115,6 +163,76 @@ footer {
 .dedec{
   text-decoration: none;
 }
+
+
+
+
+
+
+/* Mobile Menü Styling */
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #425269;
+  color: white;
+  padding: 10px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav li {
+  padding: 10px;
+}
+
+.mobile-nav a, .mobile-nav button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: block;
+}
+
+.mobile-nav button:hover, .mobile-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 </style>
-<script setup lang="ts">
+<script setup>
+import { ref } from "vue";
+
+const mobileMenuOpen = ref(false);
+const dropdowns = ref({
+  bilder: false,
+  karten: false,
+  diskurs: false,
+  projekt: false
+});
+
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value;
+};
+
+const toggleDropdown = (menu) => {
+  dropdowns.value[menu] = !dropdowns.value[menu];
+};
+
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false;
+};
 </script>

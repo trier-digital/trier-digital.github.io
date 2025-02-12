@@ -1,8 +1,6 @@
 <script>
 import test from '@/assets/img/svg/placeholder.svg'
 
-const root = "assets/topics/thumbnails/"
-
 export default {
   name: "HomeBoxes",
   data() {
@@ -18,7 +16,7 @@ export default {
           "karten"
         ],
         [
-          root + "topic_time.png",
+          "assets/img/diskurs/Rathauszeitung.jpg",
           "diskurs"
         ]
       ]
@@ -84,4 +82,11 @@ export default {
 .zoom:hover {
   transform: scale(1.05);
 }
+
+.service-item img {
+  object-fit: cover; /* Bild füllt den Container aus */
+  height: 200px; /* Alle Bilder haben die gleiche Höhe */
+  width: 100%;
+}
+
 </style>

@@ -374,4 +374,17 @@ export default {
 h5 {
   text-align: center;
 }
+
+:deep(.vue-slider-process) {
+  background-color: var(--accent-color);
+}
+:deep(.vue-slider-dot-tooltip-inner) {
+  background-color: var(--accent-color);
+}
+
+
+:deep(.vue-slider-dot-tooltip-inner::after) {
+  border-color: transparent transparent var(--accent-color) transparent;
+}
+
 </style>

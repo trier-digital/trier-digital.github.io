@@ -1,0 +1,2 @@
+aufgeteilte_articles.zip -> komprimierter Textkorpus "Meinung der Fraktionen" mit Texten aufgeteilt nach Parteien 
+trier_articles -> komprimierter Textkorpus "Meinung der Fraktionen" 

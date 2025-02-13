@@ -1,10 +1,8 @@
 <template>
     <!-- Page Title -->
     <div class="">
-    <div class="">
       <h1 class="page-title dark-background">Routen</h1>
-      <p>Routen von Demonstrationen, Umzügen und Paraden in Trier.</p>
-    </div> 
+        <h5>Routen von Demonstrationen, Umzügen und Paraden in Trier.</h5>
     </div><!-- End Page Title -->
 
 
@@ -28,5 +26,11 @@
 <style scoped>
 .container {
   padding-top: 50px;
+}
+
+h5 {
+  padding-top: 20px;
+  padding-bottom: -20px;
+  text-align: center;
 }
 </style>

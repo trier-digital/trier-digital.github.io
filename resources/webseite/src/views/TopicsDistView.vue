@@ -18,9 +18,9 @@ export default {
   <h1 class="page-title dark-background">Verteilung der Topics pro Partei</h1>
   <div class="container">
     <br>
-    <p>
+    <h2>
       "Welche Parteien sprechen über welche Themen?"
-    </p>
+    </h2>
     <p>
       Diese Grafik zeigt, wie häufig die einzelnen Topics von den verschiedenen Fraktionen in der Rathauszeitung aufgegriffen wurden. (Zu beachten ist hierbei, dass die Rathauszeitung erst seit 2009 Beiträge der Partei “Die Linke” und seit 2014 Beitrage der  Partei “AFD” enthält.)
     </p>

@@ -158,9 +158,9 @@
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top d-flex flex-row justify-content-between">
       <div class="col-lg-4 col-md-6 footer-about">
-        <a href="index.html" class="d-flex align-items-center">
-          <span class="sitename">Trier Digital</span>
-        </a>
+        <router-link to="/" class="d-flex align-items-center dedec">
+          <span class="sitename fira-code-title">Trier Digital</span>
+        </router-link>
       </div>
       <router-link to="impressum" class="text-white-50">Impressum</router-link>
     </div>

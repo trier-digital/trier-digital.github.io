@@ -17,9 +17,9 @@ export default {
   <h1 class="page-title dark-background">Topics über die Zeit</h1>
   <div class="container">
     <br>
-    <p>
+    <h2>
       “Wann standen welche Themen im Fokus?“
-    </p>
+    </h2>
     <p>
       Diese Grafik zeigt, wie sich die Frequenzen, mit denen die verschiedenen Topics zwischen 2006 und 2024
       aufgegriffen wurden, über die Zeit hinweg entwickelt haben. Welche Themen wurden wann besonders relevant gesetzt,

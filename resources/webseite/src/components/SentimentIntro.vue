@@ -22,8 +22,11 @@ export default {
       </h2>
       <p>
         Auf dieser Unterseite präsentieren wir mehrere Betrachtungsweisen einer Emotionsanalyse, die mit Hilfe eines
-        [KI-Modells](https://huggingface.co/visegradmedia-emotion/Emotion_RoBERTa_german6_v7) aus Texten der [Trierer
-        Rathauszeitung](https://www.trier.de/rathaus-buerger-in/aktuelles/rathaus-zeitung/?all=true&getAttrValues=2b9509da-8416-ad31-ecb5-6e23032ead2a&getAttrValuesCls=0a8303dd-3261-0d31-46e6-9c3332ead2aa&getAttrValuesMax=10&getAttrValuesOrder=DESC&page=1&pagesize=20&press=true)
+        <a href="https://huggingface.co/visegradmedia-emotion/Emotion_RoBERTa_german6_v7" target="_blank"
+           class="link-dark">KI-Modells </a> aus Texten der <a
+          href="https://www.trier.de/rathaus-buerger-in/aktuelles/rathaus-zeitung/?all=true&getAttrValues=2b9509da-8416-ad31-ecb5-6e23032ead2a&getAttrValuesCls=0a8303dd-3261-0d31-46e6-9c3332ead2aa&getAttrValuesMax=10&getAttrValuesOrder=DESC&page=1&pagesize=20&press=true"
+          target="_blank" class="link-dark">Trierer
+        Rathauszeitung</a>
         erstellt wurde. Im Mittelpunkt stehen Texte aus der Rathauszeitung, die von verschiedenen Parteien zwischen 2006
         und Ende 2024 dort publiziert wurden.
       </p>

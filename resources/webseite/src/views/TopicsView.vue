@@ -18,9 +18,9 @@ export default {
   <h1 class="page-title dark-background">Überblick Topicmodelling</h1>
   <div class='container'>
     <br>
-    <p>
+    <h2>
       "Welche Themen nehmen Raum im Diskurs ein?“
-    </p>
+    </h2>
     <p>
       Diese Seite dient zu einem Überblick darüber, welche Themen von den Fraktionen in der Rathauszeitung aufgegriffen werden.
     </p>

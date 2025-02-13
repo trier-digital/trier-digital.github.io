@@ -69,6 +69,9 @@
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
               <li>
+                <router-link to="/ueber">Über das Projekt</router-link>
+              </li>
+              <li>
                 <router-link to="/methoden">Methoden</router-link>
               </li>
               <li>
@@ -140,6 +143,9 @@
           <li>
             <button @click="toggleDropdown('projekt')">Projekt <i class="bi bi-chevron-down"></i></button>
             <ul v-if="dropdowns.projekt">
+              <li>
+                <router-link to="/ueber" @click="closeMobileMenu">Über das Projekt</router-link>
+              </li>
               <li>
                 <router-link to="/methoden" @click="closeMobileMenu">Methoden</router-link>
               </li>

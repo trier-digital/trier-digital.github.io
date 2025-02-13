@@ -172,12 +172,13 @@ export default {
           },
           {
             url: '/assets/maps/Trier Verteilungskabel LL/index.html',
-            name: '',
+            name: 'Trier, Verteilungskabelnetz',
             year: '1913',
-            source: '',
-            link: '',
-            scale: '',
-            comment: '',
+            source: 'Henney, Hermann: Die Elektrizitäts-Werke der Stadt Trier, Bau- und Entwicklungs-Geschichte 1902 bis 1913, Trier 1913 [Universitäts- und Stadtbibliothek Köln]',
+            link: 'https://commons.wikimedia.org/w/index.php?curid=155209766',
+            scale: 'nicht angegeben',
+            comment: 'Die Karte zeigt ein Verteilungskabelnetz in Trier aus dem Jahr 1913. Diese Art von Kabeln leitet den Strom aus den Speisekabeln in einzelne Straßen [1]. Die Karte wurde von Hermann Henney in seinem Buch "Die Elektrizitäts-Werke der Stadt Trier" abgedrückt.',
+            footnote1: '[1] Henney, Hermann: Die Elektrizitäts-Werke der Stadt Trier, Bau- und Entwicklungs-Geschichte 1902 bis 1913, Trier 1913',
             preview: '/assets/maps/Vorschaubilder/Trier Verteilungskabel LL_vorschau.jpg'
           },
           {

@@ -19,7 +19,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="/assets/img/team/avatar.png" class="img-fluid" alt="">
+                <img src="/assets/img/team/bild_%20dennis.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>Dennis Binz</h4>

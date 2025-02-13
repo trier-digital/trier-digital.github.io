@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <h1 class="page-title dark-background">Überblick Topicmodelling</h1>
+  <h1 class="page-title dark-background">Überblick Topic Modeling</h1>
   <div class='container'>
     <br>
     <h2>

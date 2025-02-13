@@ -201,6 +201,14 @@ const routes = [
     component: BildDetailsView,  // Die Detailseite
     props: true,  // Übergibt die Parameter als Props
   },
+  {
+    path: '/impressum',
+    name: 'impressum',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/ImpressumView.vue')
+  },
 ]
 
 const router = createRouter({

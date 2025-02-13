@@ -15,8 +15,9 @@ export default {
 </script>
 
 <template>
+  <h1 class="page-title dark-background">Überblick Topicmodelling</h1>
   <div class='container'>
-    <h1 class="page-title">Überblick Topicmodelling</h1>
+
     <p>"Worüber wird gesprochen?"</p>
     <p>
 
@@ -49,7 +50,7 @@ export default {
         <iframe :src="graph_2" width="100%" height="3300"></iframe>
       </div>
     </div>
-    <EmoArrows :right="right" />
+    <EmoArrows :right="right"/>
   </div>
 </template>
 

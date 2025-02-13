@@ -16,7 +16,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="page-title"> Emotionen-Verteilung in Prozent</h1>
+    <h1 class="page-title dark-background"> Emotionen-Verteilung in Prozent</h1>
     <iframe :src="link" width="100%" height="700" allowfullscreen></iframe>
     <div class="page-content d-flex flex-row justify-content-center mt-xxl-5">
       <div>

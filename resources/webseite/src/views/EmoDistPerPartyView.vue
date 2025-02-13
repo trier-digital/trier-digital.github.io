@@ -27,7 +27,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="page-title">Emotionsanalyse pro Partei</h1>
+    <h1 class="page-title dark-background">Emotionsanalyse pro Partei</h1>
     <div class="d-flex flex-row justify-content-center">
       <Carousel :cardata="links" indicators size="w-50 pt-5" class="border border-dark"/>
     </div>

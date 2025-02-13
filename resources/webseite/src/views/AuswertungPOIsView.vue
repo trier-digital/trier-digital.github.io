@@ -386,9 +386,9 @@ export default {
 
 
 <!-- Page Title -->
-<div class="page-title dark-background">
-    <div class="container position-relative">
-        <h1>Textanalyse - Rathauszeitung</h1>
+<div class="">
+    <div class="">
+        <h1 class="page-title dark-background">Textanalyse - Rathauszeitung</h1>
     </div>
 </div><!-- End Page Title -->
 

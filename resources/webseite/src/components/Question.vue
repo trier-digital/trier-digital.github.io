@@ -38,8 +38,8 @@
       </button>
     </header>
     <div :style="contentStyle" class="content">
-      <div :style="infoStyle" class="info">
-        <div v-html="info"></div>
+      <div :style="infoStyle" class="info" :class="[expanded ? 'info-open' : 'info-close']">
+        <div v-if="info" v-html="info"></div>
       </div>
       <div :style="infoStyle" class="info">
         <div v-if="sub" class="mt-5">
@@ -69,7 +69,7 @@ export default {
   setup() {
     const expanded = ref(false);
     const contentStyle = computed(() => {
-      return {"max-height": expanded.value ? "2000px" : 0};
+      return {"max-height": expanded.value ? "5000px" : 0};
     });
 
     const infoStyle = computed(() => {
@@ -141,8 +141,19 @@ export default {
 }
 
 .info {
-  z-index: -1;
   opacity: 0;
   transition: opacity 0.4s ease-out;
+}
+
+.punkt {
+  list-style-type: none;
+}
+
+.info-open{
+  z-index: 10;
+}
+
+.info-close {
+  z-index: -1;
 }
 </style>

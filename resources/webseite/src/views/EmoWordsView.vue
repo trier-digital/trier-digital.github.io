@@ -32,7 +32,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="page-title">Emotionen in Wörtern</h1>
+    <h1 class="page-title dark-background">Emotionen in Wörtern</h1>
     <div class="d-flex flex-row justify-content-center border border-dark">
       <DropdownImage :dropdown="dropdown" :previews="images"></DropdownImage>
     </div>

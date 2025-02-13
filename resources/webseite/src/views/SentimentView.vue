@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="about">
-    <h1 class="page-title">Emotionsanalyse Rathauszeitung</h1>
+    <h1 class="page-title dark-background">Emotionsanalyse Rathauszeitung</h1>
   </div>
   <SentimentIntro/>
   <SentimentBoxes />

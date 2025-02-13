@@ -23,7 +23,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="page-title">Verteilung der Emotionen</h1>
+    <h1 class="page-title dark-background">Verteilung der Emotionen</h1>
     <div class="d-flex flex-row justify-content-center border border-dark p-lg-3">
       <img :src="link" alt="emotion_pie_chart" class="rounded-2 glightbox zoom" width="60%"/>
     </div>

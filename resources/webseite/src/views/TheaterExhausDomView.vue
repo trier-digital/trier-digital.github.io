@@ -3,9 +3,9 @@
 <template>
 
   <!-- Page Title -->
-  <div class="page-title dark-background">
-  <div class="container position-relative">
-    <h1>{{ pageTitle }}</h1>
+  <div class="">
+  <div class="">
+    <h1 class="page-title dark-background">{{ pageTitle }}</h1>
   </div>
   </div><!-- End Page Title -->
 

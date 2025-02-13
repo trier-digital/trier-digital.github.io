@@ -1,95 +1,151 @@
 <template>
   <header id="header" class="header d-flex align-items-center fixed-top"
-    :class="{ 'solid': this.$route.name !== 'home', 'float': this.$route.name == 'home' }">
+          :class="{ 'solid': this.$route.name !== 'home', 'float': this.$route.name == 'home' }">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <router-link to="/" class="d-flex align-items-center dedec">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="./assets/logo_inverse.svg" alt="logo" width="100">
         <div class="logo">
-        <h1 class="sitename">Trier Digital</h1>
+          <h3 class="sitename fira-code-title">Trier Digital</h3>
         </div>
       </router-link>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li class="dropdown"><router-link to="/"><span>Bilder</span> <i
+          <li>
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="dropdown">
+            <router-link to="/"><span>Bilder</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
-              <li><router-link to="/bildergalerie">Bildergalerie</router-link></li>
-              <li><router-link to="/juxtapose">Trier früher und heute</router-link></li>
+              <li>
+                <router-link to="/bildergalerie">Bildergalerie</router-link>
+              </li>
+              <li>
+                <router-link to="/juxtapose">Trier früher und heute</router-link>
+              </li>
             </ul>
           </li>
-          <li class="dropdown"><router-link to="/"><span>Karten</span> <i
+          <li class="dropdown">
+            <router-link to="/"><span>Karten</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
-              <li><router-link to="/karten">Karten der Stadt Trier</router-link></li>
-              <li><router-link to="/routenkarte">Routen in Trier</router-link></li>
-              <li><router-link to="/poiskarte">Markante Orte</router-link></li>
-              <li><router-link to="/poisrathauszeitungkarte">Orte aus der Diskursanalyse</router-link></li>
+              <li>
+                <router-link to="/karten">Karten der Stadt Trier</router-link>
+              </li>
+              <li>
+                <router-link to="/routenkarte">Routen in Trier</router-link>
+              </li>
+              <li>
+                <router-link to="/poiskarte">Markante Orte</router-link>
+              </li>
+              <li>
+                <router-link to="/poisrathauszeitungkarte">Orte aus der Diskursanalyse</router-link>
+              </li>
             </ul>
           </li>
-          <li class="dropdown"><router-link to="/diskurs"><span>Politischer Diskurs</span> <i
-              class="bi bi-chevron-down toggle-dropdown"></i></router-link>
-            <ul>
-              <li><router-link to="/diskurs">Übersicht</router-link></li>
-              <li><router-link to="/textanalyse">Textanalyse</router-link></li>
-              <li><router-link to="/topics">Topic Modeling</router-link></li>
-              <li><router-link to="/sentiment">Emotionsanalyse</router-link></li>
-            </ul>
-          </li>
-          <li class="dropdown"><router-link to="/"><span>Projekt</span> <i
+          <li class="dropdown">
+            <router-link to="/diskurs"><span>Politischer Diskurs</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></router-link>
             <ul>
-              <li><router-link to="/methoden">Methoden</router-link></li>
-              <li><router-link to="/team">Team</router-link></li>
+              <li>
+                <router-link to="/diskurs">Übersicht</router-link>
+              </li>
+              <li>
+                <router-link to="/textanalyse">Textanalyse</router-link>
+              </li>
+              <li>
+                <router-link to="/topics">Topic Modeling</router-link>
+              </li>
+              <li>
+                <router-link to="/sentiment">Emotionsanalyse</router-link>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <router-link to="/"><span>Projekt</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></router-link>
+            <ul>
+              <li>
+                <router-link to="/methoden">Methoden</router-link>
+              </li>
+              <li>
+                <router-link to="/team">Team</router-link>
+              </li>
             </ul>
           </li>
         </ul>
       </nav>
 
 
-
- <!-- Mobile Menü Button -->
- <button class="mobile-menu-btn d-lg-none" @click="toggleMobileMenu">
+      <!-- Mobile Menü Button -->
+      <button class="mobile-menu-btn d-lg-none" @click="toggleMobileMenu">
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </button>
 
       <!-- Mobile Navigation -->
       <nav v-if="mobileMenuOpen" class="mobile-nav">
         <ul>
-          <li><router-link to="/" @click="closeMobileMenu">Home</router-link></li>
+          <li>
+            <router-link to="/" @click="closeMobileMenu">Home</router-link>
+          </li>
           <li>
             <button @click="toggleDropdown('bilder')">Bilder <i class="bi bi-chevron-down"></i></button>
             <ul v-if="dropdowns.bilder">
-              <li><router-link to="/bildergalerie" @click="closeMobileMenu">Bildergalerie</router-link></li>
-              <li><router-link to="/juxtapose" @click="closeMobileMenu">Trier früher und heute</router-link></li>
+              <li>
+                <router-link to="/bildergalerie" @click="closeMobileMenu">Bildergalerie</router-link>
+              </li>
+              <li>
+                <router-link to="/juxtapose" @click="closeMobileMenu">Trier früher und heute</router-link>
+              </li>
             </ul>
           </li>
           <li>
             <button @click="toggleDropdown('karten')">Karten <i class="bi bi-chevron-down"></i></button>
             <ul v-if="dropdowns.karten">
-              <li><router-link to="/karten" @click="closeMobileMenu">Karten der Stadt Trier</router-link></li>
-              <li><router-link to="/routenkarte" @click="closeMobileMenu">Routen in Trier</router-link></li>
-              <li><router-link to="/poiskarte" @click="closeMobileMenu">Markante Orte</router-link></li>
-              <li><router-link to="/poisrathauszeitungkarte" @click="closeMobileMenu">Orte aus der Diskursanalyse</router-link></li>
+              <li>
+                <router-link to="/karten" @click="closeMobileMenu">Karten der Stadt Trier</router-link>
+              </li>
+              <li>
+                <router-link to="/routenkarte" @click="closeMobileMenu">Routen in Trier</router-link>
+              </li>
+              <li>
+                <router-link to="/poiskarte" @click="closeMobileMenu">Markante Orte</router-link>
+              </li>
+              <li>
+                <router-link to="/poisrathauszeitungkarte" @click="closeMobileMenu">Orte aus der Diskursanalyse
+                </router-link>
+              </li>
             </ul>
           </li>
           <li>
             <button @click="toggleDropdown('diskurs')">Politischer Diskurs <i class="bi bi-chevron-down"></i></button>
             <ul v-if="dropdowns.diskurs">
-              <li><router-link to="/diskurs" @click="closeMobileMenu">Übersicht</router-link></li>
-              <li><router-link to="/textanalyse" @click="closeMobileMenu">Textanalyse</router-link></li>
-              <li><router-link to="/topics" @click="closeMobileMenu">Topic Modeling</router-link></li>
-              <li><router-link to="/sentiment" @click="closeMobileMenu">Emotionsanalyse</router-link></li>
+              <li>
+                <router-link to="/diskurs" @click="closeMobileMenu">Übersicht</router-link>
+              </li>
+              <li>
+                <router-link to="/textanalyse" @click="closeMobileMenu">Textanalyse</router-link>
+              </li>
+              <li>
+                <router-link to="/topics" @click="closeMobileMenu">Topic Modeling</router-link>
+              </li>
+              <li>
+                <router-link to="/sentiment" @click="closeMobileMenu">Emotionsanalyse</router-link>
+              </li>
             </ul>
           </li>
           <li>
             <button @click="toggleDropdown('projekt')">Projekt <i class="bi bi-chevron-down"></i></button>
             <ul v-if="dropdowns.projekt">
-              <li><router-link to="/methoden" @click="closeMobileMenu">Methoden</router-link></li>
-              <li><router-link to="/team" @click="closeMobileMenu">Team</router-link></li>
+              <li>
+                <router-link to="/methoden" @click="closeMobileMenu">Methoden</router-link>
+              </li>
+              <li>
+                <router-link to="/team" @click="closeMobileMenu">Team</router-link>
+              </li>
             </ul>
           </li>
         </ul>
@@ -98,17 +154,15 @@
 
     </div>
   </header>
-  <router-view />
+  <router-view/>
   <footer id="footer" class="footer dark-background">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Trier Digital</span>
-          </a>
-
-        </div>
+    <div class="container footer-top d-flex flex-row justify-content-between">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="d-flex align-items-center">
+          <span class="sitename">Trier Digital</span>
+        </a>
       </div>
+      <router-link to="impressum" class="text-white-50">Impressum</router-link>
     </div>
 
     <div class="container copyright text-center mt-4">
@@ -126,6 +180,16 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+.fira-code-title {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
 /*#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -160,13 +224,9 @@ footer {
   transition: all 0.0s;
 }
 
-.dedec{
+.dedec {
   text-decoration: none;
 }
-
-
-
-
 
 
 /* Mobile Menü Styling */

@@ -213,26 +213,30 @@ footer {
 }
 
 </style>
-<script setup>
-import { ref } from "vue";
-
-const mobileMenuOpen = ref(false);
-const dropdowns = ref({
-  bilder: false,
-  karten: false,
-  diskurs: false,
-  projekt: false
-});
-
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value;
-};
-
-const toggleDropdown = (menu) => {
-  dropdowns.value[menu] = !dropdowns.value[menu];
-};
-
-const closeMobileMenu = () => {
-  mobileMenuOpen.value = false;
+<script>
+export default {
+  data() {
+    return {
+      mobileMenuOpen: false,
+      dropdowns: {
+        bilder: false,
+        karten: false,
+        diskurs: false,
+        projekt: false
+      }
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.mobileMenuOpen = !this.mobileMenuOpen;
+    },
+    toggleDropdown(menu) {
+      this.dropdowns[menu] = !this.dropdowns[menu];
+    },
+    closeMobileMenu() {
+      this.mobileMenuOpen = false;
+    }
+  }
 };
 </script>
+

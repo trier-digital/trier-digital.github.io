@@ -407,10 +407,10 @@ export default {
       <div class="col-md-7 order-1 order-md-1">
             <h2>Über welche Orte diskutieren die Parteien in Trier und welche Standpunkte nehmen sie hierbei ein?</h2>
             <p>
-            Hierfür wurden die Aussagen der Parteien, die sie in der stadteigenen Rathauszeitung getätigt haben, von uns in ein Korpus zusammengefügt und diese Texte automatisiert nach Örtlichkeiten in Trier durchsucht.
+                Hierfür wurden die Aussagen der Parteien, die sie in der stadteigenen Rathauszeitung getätigt haben, von uns in ein Korpus zusammengefügt und diese Texte automatisiert nach Örtlichkeiten in Trier durchsucht.
             </p>
             <p>
-            Die Liste der Örtlichkeiten setzt sich aus Sehenswürdigkeiten, Stadtteilen, übergreifenden Begriffen (z.B. Innenstadt) und anderen geografischen Punkten (z.B. Mosel) zusammen. Sie beinhaltet insgesamt 75 <b>POIs</b> (Points Of Interest).
+                Die Liste der Örtlichkeiten setzt sich aus Sehenswürdigkeiten, Stadtteilen, übergreifenden Begriffen (z.B. Innenstadt) und anderen geografischen Punkten (z.B. Mosel) zusammen. Sie beinhaltet insgesamt 75 <b>POI</b>s (Places Of Interest).
             </p>
       </div>
     </div>
@@ -418,17 +418,10 @@ export default {
 
 <div class="container">
     <p>
-      Aus den zehn am häufigsten genannten POIs wurden drei Orte ausgesucht, die folgend genauer
-      analysiert wurden. Hierbei wurde der Frage nachgegangen, wie die Themen und die Entwicklung des
-      politischen Diskurses innerhalb eines Textkorpus mit Hilfe von Methoden des Distant Readings
-      nachgegangen werden kann.
-      Mit Hilfe von einfachen Worthäufigkeiten konnten bereits Orte herausgefunden werden, die von den
-      Parteien erwähnt wurden. Drei dieser Orte wurden folgend genauer betrachtet und die gefundenen
-      Ergebnisse mit weiteren Informationen durch Recherchearbeit unterfüttert.
+        Aus den zehn am häufigsten genannten POIs sind drei Orte ausgewählt worden, die anschließend genauer analysiert wurden. Dabei ging es um die Frage, wie sich Themen und die Entwicklung des politischen Diskurses innerhalb eines Textkorpus mithilfe von Methoden des Distant Readings untersuchen lassen. Bereits durch einfache Worthäufigkeitsanalysen ließen sich Orte identifizieren, die von den Parteien besonders oft erwähnt wurden. Drei dieser Orte standen anschließend im Fokus einer detaillierteren Betrachtung, wobei die Ergebnisse durch zusätzliche Recherchen ergänzt wurden.
     </p>
     <p>
-      Die näher betrachteten Orte sind das <b>Theater</b>, das 1082 mal innerhalb der Texte genannt wurde, das
-      <b>Exhaus</b>, mit 298 Nennungen und zuletzt der <b>Dom</b>, der 222-mal erwähnt wurde.
+        Die analysierten Orte sind das <b>Theater</b>, das insgesamt 1.082-mal in den Texten vorkommt, das <b>Exhaus</b> mit 298 Nennungen und schließlich der <b>Dom</b>, der 222-mal erwähnt wird.
     </p>
 </div>
 

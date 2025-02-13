@@ -5,7 +5,7 @@
     <div class="carousel-inner">
       <div v-for="(link, index) in cardata" :key="index">
         <div class="carousel-item" :class="{ active: index === 0 }">
-          <img :src="link" class="d-block mx-auto glightbox zoom" :class="size" alt="...">
+          <img :src="link" class="d-block mx-auto glightbox zoom" :class="size" alt="">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>

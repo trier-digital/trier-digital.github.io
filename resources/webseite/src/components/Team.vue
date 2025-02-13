@@ -74,7 +74,7 @@
   
             <div class="col-lg-3 col-md-6 member">
               <div class="member-img">
-                <img src="assets/img/team/Bianca.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Bianca.JPG" class="img-fluid" alt="">
               </div>
               <div class="member-info text-center">
                 <h4>B. O.</h4>

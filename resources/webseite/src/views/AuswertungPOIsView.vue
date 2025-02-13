@@ -29,352 +29,352 @@ export default {
     {
         "cat1": "AFD",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Dom.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Ehrang.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Euren.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Exhaus.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Innenstadt.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Kürenz.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Mosel.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Tarforst.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Theater.svg"
     },
     {
         "cat1": "AFD",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/AFD_Trier-West.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Dom.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Ehrang.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Euren.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Exhaus.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Innenstadt.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Kürenz.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Mosel.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Tarforst.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Theater.svg"
     },
     {
         "cat1": "CDU",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/CDU_Trier-West.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Dom.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Ehrang.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Euren.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Exhaus.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Innenstadt.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Kürenz.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Mosel.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Tarforst.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Theater.svg"
     },
     {
         "cat1": "Die Grünen",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Grünen_Trier-West.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Dom.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Ehrang.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Euren.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Exhaus.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Innenstadt.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Kürenz.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Mosel.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Tarforst.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Theater.svg"
     },
     {
         "cat1": "Die Linken",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/Die Linken_Trier-West.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Dom.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Ehrang.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Euren.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Exhaus.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Innenstadt.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Kürenz.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Mosel.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Tarforst.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Theater.svg"
     },
     {
         "cat1": "FDP",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/FDP_Trier-West.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Dom.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Ehrang.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Euren.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Exhaus.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Innenstadt.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Kürenz.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Mosel.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Tarforst.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Theater.svg"
     },
     {
         "cat1": "SPD",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/SPD_Trier-West.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Dom",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Dom.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Dom.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Ehrang",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Ehrang.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Ehrang.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Euren",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Euren.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Euren.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Exhaus",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Exhaus.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Exhaus.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Innenstadt",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Innenstadt.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Innenstadt.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Kürenz",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Kürenz.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Kürenz.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Mosel",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Mosel.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Mosel.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Tarforst",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Tarforst.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Tarforst.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Theater",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Theater.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Theater.svg"
     },
     {
         "cat1": "UBT-FWG-UBM",
         "cat2": "Trier-West",
-        "src": "../..//public/assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Trier-West.svg"
+        "src": "assets/img/Auswertung Rathauszeitung - Rebecca/wordclouds_for_generator/UBT-FWG-UBM_Trier-West.svg"
     }
       ]
     }

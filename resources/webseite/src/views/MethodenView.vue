@@ -30,7 +30,7 @@ export default {
       <p>
         Die vielfältigen digitalen Herangehensweisen dieser Disziplin ermöglichen es, geisteswissenschaftliche
         Forschungsfragen neu zu denken. Für weitere Einblicke in die Digital Humanities ist auch ein Blick auf
-        whatisdigitalhumanities.com zu empfehlen.
+        <a href="https://whatisdigitalhumanities.com">whatisdigitalhumanities.com</a> zu empfehlen.
       </p>
       <p>
         Das Projekt orientiert sich so weit wie möglich an Grundsätzen der Digital Humanities – darunter die

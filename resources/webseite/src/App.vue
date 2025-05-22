@@ -152,6 +152,9 @@
               <li>
                 <router-link to="/team" @click="closeMobileMenu">Team</router-link>
               </li>
+              <li>
+                <router-link to="/downloads" @click="closeMobileMenu">Downloads</router-link>
+              </li>
             </ul>
           </li>
         </ul>

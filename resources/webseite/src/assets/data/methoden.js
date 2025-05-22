@@ -2,7 +2,7 @@ const questions = [
     {
         id: 1,
         title: "Historisches Bildmaterial",
-        info: "<h5>Dokumentation der Gruppe \"Historisches Bildmaterial</h5>" +
+        info: "<h5>Dokumentation der Gruppe \"Historisches Bildmaterial\"</h5>" +
             "<p>Das historische Bildmaterial dient dazu, die städtebaulichen und gesellschaftlichen Veränderungen in Trier im 20. Jahrhundert sichtbar zu machen. Bei der Auswahl der Bilder wurde besonderer Wert daraufgelegt, markante Gebäude und zentrale Orte von Trier (Places of Interest, POIs) zu identifizieren, die den Wandel der Stadt exemplarisch veranschaulichen und einen besonderen Eindruck hinterließenassen. Ziel dieser digitalen Ausstellung ist es, die Bilder soweit wie möglich unter den Prinzipien von Open Access verfügbar zu machen, unter Berücksichtigung der rechtlichen Rahmenbedingungen. Darüber hinaus sind viele Bilder in der Karte wiederzufinden.</p>" +
             "<h5>Vorgehen und Methoden</h5>" +
             "<p>Für die Sammlung des Materials wurden verschiedene Quellen herangezogen, darunter insbesondere frei zugängliche Online-Sammlungen wie Wikimedia Commons. Um die Recherche nach spezifischen Zeiträumen zu erleichtern, wurde ein eigens entwickeltes Python-Skript eingesetzt. Neben Online-Recherchen wurden auch direkte Kontakte zu Institutionen genutzt. Besonders hilfreich erwiesen sich die Zusammenarbeit mit dem Volksfreund, dem Kulturzentrum TUFA und dem Landesarchiv Baden-Württemberg, die uns bereitwillig und effizient unterstützten.</p>" +
